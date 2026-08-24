@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Catálogo de Treinamentos</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="catalogo-page">
+    <header class="catalogo-header">
+      <div class="catalogo-logo">SISS <span>Saúde</span></div>
+
+      <nav class="catalogo-nav">
+        <button class="nav-link ativo" data-modulo="Todos">Início</button>
+
+        <button class="nav-link" data-modulo="Ambulatorial">
+          Ambulatorial
+        </button>
+
+        <button class="nav-link" data-modulo="Hospitalar">Hospitalar</button>
+      </nav>
+
+      <div class="municipio-atual">
+        Município:
+        <strong id="nomeMunicipio"></strong>
+
+        <button id="btnTrocarMunicipio">Trocar</button>
+      </div>
+    </header>
+
+    <main class="catalogo-container">
+      <section class="catalogo-intro">
+        <h1 id="tituloCatalogo">Treinamentos</h1>
+
+        <p id="mensagemMunicipio"></p>
+
+        <div class="search-container">
+          <input
+            type="text"
+            id="campoPesquisa"
+            placeholder="O que você deseja aprender?"
+            autocomplete="off"
+          />
+
+          <div id="sugestoesPesquisa" class="sugestoes-pesquisa"></div>
+        </div>
+
+        <div class="filtros-container">
+          <div class="filtro-grupo">
+            <label for="filtroCategoria"> Categoria </label>
+
+            <select id="filtroCategoria">
+              <option value="">Todas as categorias</option>
+            </select>
+          </div>
+
+          <div class="filtro-grupo">
+            <label for="filtroSubcategoria"> Subcategoria </label>
+
+            <select id="filtroSubcategoria">
+              <option value="">Todas as subcategorias</option>
+            </select>
+          </div>
+
+          <div class="filtro-acoes">
+            <button type="button" id="btnLimparFiltros">Limpar filtros</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resultados de pesquisa ou filtros -->
+      <section id="resultadoPesquisa" class="resultado-pesquisa"></section>
+
+      <!-- Catálogo padrão -->
+      <section id="catalogoVideos">
+        <div class="categoria-section">
+          <h2>Ambulatorial</h2>
+
+          <div id="videosAmbulatorial" class="video-row"></div>
+        </div>
+
+        <div class="categoria-section">
+          <h2>Hospitalar</h2>
+
+          <div id="videosHospitalar" class="video-row"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/catalogo.js"></script>
+  </body>
+</html>

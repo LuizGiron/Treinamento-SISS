@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Treinamento</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="video-page">
+    <header class="catalogo-header">
+      <div class="catalogo-logo">SISS <span>Saúde</span></div>
+
+      <div class="municipio-atual">
+        Município:
+        <strong id="nomeMunicipio"></strong>
+
+        <button id="btnVoltarCatalogo">◀ Voltar</button>
+      </div>
+    </header>
+
+    <main class="video-container">
+      <section class="video-conteudo">
+        <div class="breadcrumb" id="breadcrumb"></div>
+
+        <h1 id="videoTitulo"></h1>
+
+        <p class="video-descricao" id="videoDescricao"></p>
+
+        <div class="player-container">
+          <iframe
+            id="youtubePlayer"
+            src=""
+            title="Player de treinamento"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <div class="video-detalhes">
+          <span id="videoModulo"></span>
+
+          <span id="videoDuracaoDetalhe"></span>
+        </div>
+      </section>
+
+      <section class="relacionados-section">
+        <h2>Treinamentos relacionados</h2>
+
+        <div id="videosRelacionados" class="video-row"></div>
+      </section>
+    </main>
+
+    <script src="js/video.js"></script>
+  </body>
+</html>
