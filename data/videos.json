@@ -1,213 +1,172 @@
 [
-    {
-        "id": 1,
-        "municipio": "Itu",
-        "modulo": "Ambulatorial",
-        "categoria": "Agenda",
-        "subcategoria": "Regulação",
-        "titulo": "Central de Marcação",
-        "descricao": "Passo a passo para utilizar a Central de Marcação.",
-        "tags": [
-            "Agenda",
-            "Marcação",
-            "Regulação",
-            "Exames"
-        ],
-        "duracao": "02:40",
-        "videoUrl": "https://www.youtube.com/watch?v=utSTri2NM04"
-    },
-    {
-        "id": 2,
-        "municipio": "Guarulhos",
-        "modulo": "Hospitalar",
-        "categoria": "Triagem",
-        "subcategoria": "Classificação de risco",
-        "titulo": "Triagem invertida",
-        "descricao": "Aprenda como realizar a triagem invertida, uma abordagem inovadora para classificar pacientes de acordo com a gravidade de seus sintomas.",
-        "tags": [
-            "triagem",
-            "classificação de risco",
-            "Triagem invertida"
-        ],
-        "duracao": "02:46",
-        "videoUrl": "https://www.youtube.com/watch?v=SlGJg970SSg&list=PLOpq0JgtOwjk"
-    },
-    {
-        "id": 3,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "Totem",
-        "subcategoria": "Totem",
-        "titulo": "Fluxo Totem",
-        "descricao": "Como funciona o fluxo do Totem no módulo Hospitalar.",
-        "tags": [
-            "hospitalar",
-            "totem",
-            "fluxo",
-            "senha",
-            "gerador",
-            "senha"
-        ],
-        "duracao": "00:50",
-        "videoUrl": "https://youtu.be/NxBMEyy-guo"
-    },
+  {
+    "id": 1,
+    "municipio": "Itu",
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Regulação",
+    "titulo": "Central de Marcação",
+    "descricao": "Passo a passo para utilizar a Central de Marcação.",
+    "tags": ["Agenda", "Marcação", "Regulação", "Exames"],
+    "duracao": "02:40",
+    "videoUrl": "https://www.youtube.com/watch?v=utSTri2NM04"
+  },
+  {
+    "id": 2,
+    "municipio": "Guarulhos",
+    "modulo": "Hospitalar",
+    "categoria": "Triagem",
+    "subcategoria": "Classificação de risco",
+    "titulo": "Triagem invertida",
+    "descricao": "Aprenda como realizar a triagem invertida, uma abordagem inovadora para classificar pacientes de acordo com a gravidade de seus sintomas.",
+    "tags": ["triagem", "classificação de risco", "Triagem invertida"],
+    "duracao": "02:46",
+    "videoUrl": "https://www.youtube.com/watch?v=SlGJg970SSg&list=PLOpq0JgtOwjk"
+  },
+  {
+    "id": 3,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "Totem",
+    "subcategoria": "Totem",
+    "titulo": "Fluxo Totem",
+    "descricao": "Como funciona o fluxo do Totem no módulo Hospitalar.",
+    "tags": ["hospitalar", "totem", "fluxo", "senha", "gerador", "senha"],
+    "duracao": "00:50",
+    "videoUrl": "https://youtu.be/NxBMEyy-guo"
+  },
 
-    {
-        "id": 4,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "Triagem",
-        "subcategoria": "Classificação de risco",
-        "titulo": "Triagem",
-        "descricao": "Aprenda como realizar a triagem, uma abordagem inovadora para classificar pacientes de acordo com a gravidade de seus sintomas.",
-        "tags": [
-            "hospitalar",
-            "triagem",
-            "classificação de risco"
-        ],
-        "duracao": "04:14",
-        "videoUrl": "https://youtu.be/U2foceST9XQ"
-    },
+  {
+    "id": 4,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "Triagem",
+    "subcategoria": "Classificação de risco",
+    "titulo": "Triagem",
+    "descricao": "Aprenda como realizar a triagem, uma abordagem inovadora para classificar pacientes de acordo com a gravidade de seus sintomas.",
+    "tags": ["hospitalar", "triagem", "classificação de risco"],
+    "duracao": "04:14",
+    "videoUrl": "https://youtu.be/U2foceST9XQ"
+  },
 
-    {
-        "id": 5,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "Prontuário Eletrônico",
-        "subcategoria": "Prontuário Eletrônico",
-        "titulo": "Fluxo Atendimento médico",
-        "descricao": "Aprenda como realizar atendimento médico.",
-        "tags": [
-            "hospitalar",
-            "prontuário eletrônico",
-            "atendimento",
-            "medico"
-        ],
-        "duracao": "08:59",
-        "videoUrl": "https://youtu.be/_OEC0KUlRcU"
-    },
+  {
+    "id": 5,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "Prontuário Eletrônico",
+    "subcategoria": "Prontuário Eletrônico",
+    "titulo": "Fluxo Atendimento médico",
+    "descricao": "Aprenda como realizar atendimento médico.",
+    "tags": ["hospitalar", "prontuário eletrônico", "atendimento", "medico"],
+    "duracao": "08:59",
+    "videoUrl": "https://youtu.be/_OEC0KUlRcU"
+  },
 
-    {
-        "id": 6,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "Faturamento",
-        "subcategoria": "Checkout",
-        "titulo": "Fluxo Faturamento",
-        "descricao": "Aprenda como realizar o faturamento no módulo Hospitalar.",
-        "tags": [
-            "hospitalar",
-            "faturamento",
-            "fluxo",
-            "financeiro",
-            "checkout"
-        ],
-        "duracao": "01:05",
-        "videoUrl": "https://youtu.be/GpqLfikSiLc"
-    },
+  {
+    "id": 6,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "Faturamento",
+    "subcategoria": "Checkout",
+    "titulo": "Fluxo Faturamento",
+    "descricao": "Aprenda como realizar o faturamento no módulo Hospitalar.",
+    "tags": ["hospitalar", "faturamento", "fluxo", "financeiro", "checkout"],
+    "duracao": "01:05",
+    "videoUrl": "https://youtu.be/GpqLfikSiLc"
+  },
 
-    {
-        "id": 7,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "",
-        "subcategoria": "",
-        "titulo": "",
-        "descricao": "",
-        "tags": [
-            "hospitalar",
-            "",
-            ""
-        ],
-        "duracao": "04:50",
-        "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
-    },
+  {
+    "id": 7,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "",
+    "subcategoria": "",
+    "titulo": "",
+    "descricao": "",
+    "tags": ["hospitalar", "", ""],
+    "duracao": "04:50",
+    "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
+  },
 
-    {
-        "id": 8,
-        "municipio": "Osasco",
-        "modulo": "Hospitalar",
-        "categoria": "",
-        "subcategoria": "",
-        "titulo": "",
-        "descricao": "",
-        "tags": [
-            "hospitalar",
-            "",
-            ""
-        ],
-        "duracao": "04:50",
-        "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
-    },
+  {
+    "id": 8,
+    "municipio": "Osasco",
+    "modulo": "Hospitalar",
+    "categoria": "",
+    "subcategoria": "",
+    "titulo": "",
+    "descricao": "",
+    "tags": ["hospitalar", "", ""],
+    "duracao": "04:50",
+    "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
+  },
 
-    {
-        "id": 9,
-        "municipio": "Osasco",
-        "modulo": "Ambulatorial",
-        "categoria": "ACS",
-        "subcategoria": "Cadastro domiciliar",
-        "titulo": "Cadastro Domiciliar",
-        "descricao": "Como realizar o cadastro domiciliar no módulo Ambulatorial.",
-        "tags": [
-            "ambulatorial",
-            "acs",
-            "cadastro",
-            "domiciliar"
-        ],
-        "duracao": "03:17",
-        "videoUrl": "https://youtu.be/SEGn-Gj_bEk"
-    },
+  {
+    "id": 9,
+    "municipio": "Osasco",
+    "modulo": "Ambulatorial",
+    "categoria": "ACS",
+    "subcategoria": "Cadastro domiciliar",
+    "titulo": "Cadastro Domiciliar",
+    "descricao": "Como realizar o cadastro domiciliar no módulo Ambulatorial.",
+    "tags": ["ambulatorial", "acs", "cadastro", "domiciliar"],
+    "duracao": "03:17",
+    "videoUrl": "https://youtu.be/SEGn-Gj_bEk"
+  },
 
-    {
-        "id": 10,
-        "municipio": "Osasco",
-        "modulo": "Ambulatorial",
-        "categoria": "ACS",
-        "subcategoria": "Cadastro Individual",
-        "titulo": "Cadastro Individual",
-        "descricao": "Como realizar o cadastro individual no módulo Ambulatorial.",
-        "tags": [
-            "ambulatorial",
-            "acs",
-            "cadastro",
-            "individual"
-        ],
-        "duracao": "05:21",
-        "videoUrl": "https://youtu.be/-rPuGDWGKm0"
-    },
+  {
+    "id": 10,
+    "municipio": "Osasco",
+    "modulo": "Ambulatorial",
+    "categoria": "ACS",
+    "subcategoria": "Cadastro Individual",
+    "titulo": "Cadastro Individual",
+    "descricao": "Como realizar o cadastro individual no módulo Ambulatorial.",
+    "tags": ["ambulatorial", "acs", "cadastro", "individual"],
+    "duracao": "05:21",
+    "videoUrl": "https://youtu.be/-rPuGDWGKm0"
+  },
 
-    {
-        "id": 11,
-        "municipio": "Osasco",
-        "modulo": "Ambulatorial",
-        "categoria": "ACS",
-        "subcategoria": "Lançamento de Visitas",
-        "titulo": "Lançamento de Visitas",
-        "descricao": "Como realizar o lançamento de visitas no módulo Ambulatorial.",
-        "tags": [
-            "ambulatorial",
-            "acs",
-            "lancamento",
-            "visitas"
-        ],
-        "duracao": "02:20",
-        "videoUrl": "https://youtu.be/IPneap4RPO0"
-    },
+  {
+    "id": 11,
+    "municipio": "Osasco",
+    "modulo": "Ambulatorial",
+    "categoria": "ACS",
+    "subcategoria": "Lançamento de Visitas",
+    "titulo": "Lançamento de Visitas",
+    "descricao": "Como realizar o lançamento de visitas no módulo Ambulatorial.",
+    "tags": ["ambulatorial", "acs", "lancamento", "visitas"],
+    "duracao": "02:20",
+    "videoUrl": "https://youtu.be/IPneap4RPO0"
+  },
 
-    {
-        "id": 12,
-        "municipio": "Osasco",
-        "modulo": "Ambulatorial",
-        "categoria": "ACS",
-        "subcategoria": "Lançamento de Visitas",
-        "titulo": "",
-        "descricao": "",
-        "tags": [
-            "ambulatorial",
-            "",
-            ""
-        ],
-        "duracao": "04:50",
-        "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
-    }
+  {
+    "id": 12,
+    "municipio": "Osasco",
+    "modulo": "Ambulatorial",
+    "categoria": "ACS",
+    "subcategoria": "Lançamento de Visitas",
+    "titulo": "",
+    "descricao": "",
+    "tags": ["ambulatorial", "", ""],
+    "duracao": "04:50",
+    "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
+  },
+  {
+  "id": 20,
+  "municipio": "Paulínia",
+  "modulo": "Ambulatorial",
+  "categoria": "Estabelecimento",
+  "subcategoria": "Cadastro",
+  "titulo": "Cadastro de profissional - busca CNS",
+  "descricao": "Passo a passo para cadastro de profissional utilizando a busca por CNS.",
+  "tags": [
+    "Profissional",
+    "Cadastro",
+    "CNS"
+  ],
+  "duracao": "02:55",
+  "plataforma": "sharepoint",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=8e0c8569-bae4-4c37-ac49-f7ddc3195f0d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+}
 ]
