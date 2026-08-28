@@ -209,19 +209,5 @@
         ],
         "duracao": "04:50",
         "videoUrl": "https://www.youtube.com/watch?v=EXEMPLO"
-    },
-    {
-    "id": 13,
-    "municipio": "Itu",
-    "modulo": "Ambulatorial",
-    "categoria": "Teste",
-    "subcategoria": "Teste",
-    "titulo": "Teste json",
-    "descricao": "Testando json",
-    "tags": [
-        "Teste"
-    ],
-    "duracao": "01:00",
-    "videoUrl": ""
-}
+    }
 ]
