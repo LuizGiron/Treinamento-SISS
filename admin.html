@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cadastro de Treinamentos</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="admin-page">
+    <header class="catalogo-header">
+      <div class="catalogo-logo">SISS <span>Saúde</span></div>
+
+      <div>Cadastro de Treinamentos</div>
+    </header>
+
+    <main class="admin-container">
+      <section class="admin-card">
+        <h1>Novo treinamento</h1>
+
+        <p>Preencha os dados abaixo para gerar o cadastro do vídeo.</p>
+
+        <div class="admin-grid">
+          <div class="campo-form">
+            <label for="adminMunicipio"> Município </label>
+
+            <select id="adminMunicipio">
+              <option value="">Selecione...</option>
+              <option value="Osasco">Osasco</option>
+              <option value="Itu">Itu</option>
+              <option value="Guarulhos">Guarulhos</option>
+              <option value="Santo André">Santo André</option>
+              <option value="Valinhos">Valinhos</option>
+              <option value="Barueri">Barueri</option>
+              <option value="Mauá">Mauá</option>
+              <option value="Jundiaí">Jundiaí</option>
+              <option value="Águas Lindas">Águas Lindas</option>
+              <option value="Itumbiara">Itumbiara</option>
+              <option value="Piracicaba">Piracicaba</option>
+              <option value="SAD">SAD</option>
+              <option value="Campos">Campos</option>
+              <option value="São Vicente">São Vicente</option>
+              <option value="Paulínia">Paulínia</option>
+            </select>
+          </div>
+
+          <div class="campo-form">
+            <label for="adminModulo"> Módulo </label>
+
+            <select id="adminModulo">
+              <option value="">Selecione...</option>
+              <option value="Ambulatorial">Ambulatorial</option>
+              <option value="Hospitalar">Hospitalar</option>
+            </select>
+          </div>
+
+          <div class="campo-form">
+            <label for="adminCategoria"> Categoria </label>
+
+            <input type="text" id="adminCategoria" placeholder="Ex.: Agenda" />
+          </div>
+
+          <div class="campo-form">
+            <label for="adminSubcategoria"> Subcategoria </label>
+
+            <input
+              type="text"
+              id="adminSubcategoria"
+              placeholder="Ex.: Regulação"
+            />
+          </div>
+
+          <div class="campo-form campo-largo">
+            <label for="adminTitulo"> Título </label>
+
+            <input
+              type="text"
+              id="adminTitulo"
+              placeholder="Ex.: Central de Marcação"
+            />
+          </div>
+
+          <div class="campo-form campo-largo">
+            <label for="adminDescricao"> Descrição </label>
+
+            <textarea
+              id="adminDescricao"
+              rows="3"
+              placeholder="Descreva brevemente o treinamento"
+            >
+            </textarea>
+          </div>
+
+          <div class="campo-form campo-largo">
+            <label for="adminTags"> Tags </label>
+
+            <input
+              type="text"
+              id="adminTags"
+              placeholder="Ex.: agenda, marcação, exames"
+            />
+
+            <small> Separe as tags por vírgula. </small>
+          </div>
+
+          <div class="campo-form">
+            <label for="adminDuracao"> Duração </label>
+
+            <input type="text" id="adminDuracao" placeholder="Ex.: 02:39" />
+          </div>
+
+          <div class="campo-form">
+            <label for="adminVideoUrl"> Link do YouTube </label>
+
+            <input
+              type="url"
+              id="adminVideoUrl"
+              placeholder="https://www.youtube.com/watch?v=..."
+            />
+          </div>
+        </div>
+
+        <div class="admin-acoes">
+          <button id="btnGerarCadastro">Gerar cadastro</button>
+
+          <button id="btnLimparCadastro" class="btn-secundario">Limpar</button>
+        </div>
+      </section>
+
+      <section
+        id="resultadoAdmin"
+        class="admin-resultado"
+        style="display: none"
+      >
+        <div class="admin-resultado-topo">
+          <h2>JSON gerado</h2>
+
+          <button id="btnCopiarJson">Copiar JSON</button>
+        </div>
+
+        <pre id="jsonGerado"></pre>
+      </section>
+    </main>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>

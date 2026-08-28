@@ -10,34 +10,71 @@
   </head>
 
   <body class="catalogo-page">
+
+    <!-- CABEÇALHO -->
     <header class="catalogo-header">
-      <div class="catalogo-logo">SISS <span>Saúde</span></div>
+
+      <div class="catalogo-logo">
+        SISS <span>Saúde</span>
+      </div>
 
       <nav class="catalogo-nav">
-        <button class="nav-link ativo" data-modulo="Todos">Início</button>
 
-        <button class="nav-link" data-modulo="Ambulatorial">
+        <button
+          class="nav-link ativo"
+          data-modulo="Todos"
+        >
+          Início
+        </button>
+
+        <button
+          class="nav-link"
+          data-modulo="Ambulatorial"
+        >
           Ambulatorial
         </button>
 
-        <button class="nav-link" data-modulo="Hospitalar">Hospitalar</button>
+        <button
+          class="nav-link"
+          data-modulo="Hospitalar"
+        >
+          Hospitalar
+        </button>
+
       </nav>
 
       <div class="municipio-atual">
+
         Município:
+
         <strong id="nomeMunicipio"></strong>
 
-        <button id="btnTrocarMunicipio">Trocar</button>
+        <button id="btnTrocarMunicipio">
+          Trocar
+        </button>
+
       </div>
+
     </header>
 
+
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="catalogo-container">
+
+
+      <!-- ÁREA SUPERIOR -->
       <section class="catalogo-intro">
-        <h1 id="tituloCatalogo">Treinamentos</h1>
+
+        <h1 id="tituloCatalogo">
+          Treinamentos
+        </h1>
 
         <p id="mensagemMunicipio"></p>
 
+
+        <!-- PESQUISA -->
         <div class="search-container">
+
           <input
             type="text"
             id="campoPesquisa"
@@ -45,51 +82,160 @@
             autocomplete="off"
           />
 
-          <div id="sugestoesPesquisa" class="sugestoes-pesquisa"></div>
+          <div
+            id="sugestoesPesquisa"
+            class="sugestoes-pesquisa"
+          ></div>
+
         </div>
 
+
+        <!-- FILTROS -->
         <div class="filtros-container">
-          <div class="filtro-grupo">
-            <label for="filtroCategoria"> Categoria </label>
 
-            <select id="filtroCategoria">
-              <option value="">Todas as categorias</option>
-            </select>
+
+          <!-- CATEGORIA -->
+          <div class="filtro-grupo">
+
+            <label>
+              Categoria
+            </label>
+
+            <div
+              class="select-custom filtro-custom"
+              id="selectCategoria"
+            >
+
+              <button
+                type="button"
+                class="select-trigger"
+              >
+
+                <span id="categoriaSelecionadaTexto">
+                  Todas as categorias
+                </span>
+
+                <span class="select-seta">
+                  ⌄
+                </span>
+
+              </button>
+
+
+              <div
+                class="select-opcoes"
+                id="opcoesCategoria"
+              ></div>
+
+            </div>
+
           </div>
 
-          <div class="filtro-grupo">
-            <label for="filtroSubcategoria"> Subcategoria </label>
 
-            <select id="filtroSubcategoria">
-              <option value="">Todas as subcategorias</option>
-            </select>
+          <!-- SUBCATEGORIA -->
+          <div class="filtro-grupo">
+
+            <label>
+              Subcategoria
+            </label>
+
+            <div
+              class="select-custom filtro-custom"
+              id="selectSubcategoria"
+            >
+
+              <button
+                type="button"
+                class="select-trigger"
+              >
+
+                <span id="subcategoriaSelecionadaTexto">
+                  Todas as subcategorias
+                </span>
+
+                <span class="select-seta">
+                  ⌄
+                </span>
+
+              </button>
+
+
+              <div
+                class="select-opcoes"
+                id="opcoesSubcategoria"
+              ></div>
+
+            </div>
+
           </div>
 
+
+          <!-- BOTÃO LIMPAR -->
           <div class="filtro-acoes">
-            <button type="button" id="btnLimparFiltros">Limpar filtros</button>
+
+            <button
+              type="button"
+              id="btnLimparFiltros"
+            >
+              Limpar filtros
+            </button>
+
           </div>
+
+
         </div>
+
       </section>
 
-      <!-- Resultados de pesquisa ou filtros -->
-      <section id="resultadoPesquisa" class="resultado-pesquisa"></section>
 
-      <!-- Catálogo padrão -->
+      <!-- RESULTADOS DA PESQUISA -->
+      <section
+        id="resultadoPesquisa"
+        class="resultado-pesquisa"
+      ></section>
+
+
+      <!-- CATÁLOGO -->
       <section id="catalogoVideos">
-        <div class="categoria-section">
-          <h2>Ambulatorial</h2>
 
-          <div id="videosAmbulatorial" class="video-row"></div>
+
+        <!-- AMBULATORIAL -->
+        <div class="categoria-section">
+
+          <h2>
+            Ambulatorial
+          </h2>
+
+          <div
+            id="videosAmbulatorial"
+            class="video-row"
+          ></div>
+
         </div>
 
-        <div class="categoria-section">
-          <h2>Hospitalar</h2>
 
-          <div id="videosHospitalar" class="video-row"></div>
+        <!-- HOSPITALAR -->
+        <div class="categoria-section">
+
+          <h2>
+            Hospitalar
+          </h2>
+
+          <div
+            id="videosHospitalar"
+            class="video-row"
+          ></div>
+
         </div>
+
+
       </section>
+
     </main>
 
+
+    <!-- JAVASCRIPT -->
     <script src="js/catalogo.js"></script>
+
   </body>
 </html>

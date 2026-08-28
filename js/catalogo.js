@@ -1,635 +1,1456 @@
+// ========================================
+// VARIÁVEIS PRINCIPAIS
+// ========================================
+
 let videosDoMunicipio = [];
-
-const municipioSelecionado = localStorage.getItem("municipioSelecionado");
-
-const nomeMunicipio = document.getElementById("nomeMunicipio");
-
-const mensagemMunicipio = document.getElementById("mensagemMunicipio");
-
-const videosAmbulatorial = document.getElementById("videosAmbulatorial");
-
-const videosHospitalar = document.getElementById("videosHospitalar");
-
-const btnTrocarMunicipio = document.getElementById("btnTrocarMunicipio");
-
-const campoPesquisa = document.getElementById("campoPesquisa");
-
-const resultadoPesquisa = document.getElementById("resultadoPesquisa");
-
-const catalogoVideos = document.getElementById("catalogoVideos");
-
-const filtroCategoria = document.getElementById("filtroCategoria");
-
-const filtroSubcategoria = document.getElementById("filtroSubcategoria");
-const navLinks = document.querySelectorAll(".nav-link");
 
 let moduloSelecionado = "Todos";
 
-const tituloCatalogo = document.getElementById("tituloCatalogo");
+let categoriaSelecionada = "";
 
-const sugestoesPesquisa = document.getElementById("sugestoesPesquisa");
+let subcategoriaSelecionada = "";
 
-const btnLimparFiltros = document.getElementById("btnLimparFiltros");
+
+// ========================================
+// MUNICÍPIO
+// ========================================
+
+const municipioSelecionado =
+  localStorage.getItem("municipioSelecionado");
+
+
+// ========================================
+// ELEMENTOS DA PÁGINA
+// ========================================
+
+const nomeMunicipio =
+  document.getElementById("nomeMunicipio");
+
+const mensagemMunicipio =
+  document.getElementById("mensagemMunicipio");
+
+const videosAmbulatorial =
+  document.getElementById("videosAmbulatorial");
+
+const videosHospitalar =
+  document.getElementById("videosHospitalar");
+
+const btnTrocarMunicipio =
+  document.getElementById("btnTrocarMunicipio");
+
+const campoPesquisa =
+  document.getElementById("campoPesquisa");
+
+const resultadoPesquisa =
+  document.getElementById("resultadoPesquisa");
+
+const catalogoVideos =
+  document.getElementById("catalogoVideos");
+
+const navLinks =
+  document.querySelectorAll(".nav-link");
+
+const tituloCatalogo =
+  document.getElementById("tituloCatalogo");
+
+const sugestoesPesquisa =
+  document.getElementById("sugestoesPesquisa");
+
+const btnLimparFiltros =
+  document.getElementById("btnLimparFiltros");
+
+
+// ========================================
+// DROPDOWN CATEGORIA
+// ========================================
+
+const selectCategoria =
+  document.getElementById("selectCategoria");
+
+const triggerCategoria =
+  selectCategoria.querySelector(".select-trigger");
+
+const opcoesCategoria =
+  document.getElementById("opcoesCategoria");
+
+const categoriaSelecionadaTexto =
+  document.getElementById("categoriaSelecionadaTexto");
+
+
+// ========================================
+// DROPDOWN SUBCATEGORIA
+// ========================================
+
+const selectSubcategoria =
+  document.getElementById("selectSubcategoria");
+
+const triggerSubcategoria =
+  selectSubcategoria.querySelector(".select-trigger");
+
+const opcoesSubcategoria =
+  document.getElementById("opcoesSubcategoria");
+
+const subcategoriaSelecionadaTexto =
+  document.getElementById("subcategoriaSelecionadaTexto");
+
 
 // ========================================
 // VERIFICAR MUNICÍPIO
 // ========================================
 
 if (!municipioSelecionado) {
-  window.location.href = "index.html";
-} else {
-  nomeMunicipio.textContent = municipioSelecionado;
 
-  mensagemMunicipio.textContent = `Conteúdos disponíveis para ${municipioSelecionado}`;
+  window.location.href = "index.html";
+
+} else {
+
+  nomeMunicipio.textContent =
+    municipioSelecionado;
+
+  mensagemMunicipio.textContent =
+    `Conteúdos disponíveis para ${municipioSelecionado}`;
+
 }
+
 
 // ========================================
 // TROCAR MUNICÍPIO
 // ========================================
 
 btnTrocarMunicipio.addEventListener("click", () => {
-  localStorage.removeItem("municipioSelecionado");
 
-  localStorage.removeItem("videoSelecionadoId");
+  localStorage.removeItem(
+    "municipioSelecionado"
+  );
 
-  window.location.href = "index.html";
+  localStorage.removeItem(
+    "videoSelecionadoId"
+  );
+
+  window.location.href =
+    "index.html";
+
 });
+
 
 // ========================================
 // CARREGAR VÍDEOS
 // ========================================
 
 async function carregarVideos() {
+
   try {
-    const resposta = await fetch("data/videos.json");
+
+    const resposta =
+      await fetch("data/videos.json");
 
     if (!resposta.ok) {
-      throw new Error("Não foi possível carregar o arquivo videos.json");
+
+      throw new Error(
+        "Não foi possível carregar o arquivo videos.json"
+      );
+
     }
 
-    const videos = await resposta.json();
+    const videos =
+      await resposta.json();
 
-    // Filtra apenas vídeos do município escolhido
-    videosDoMunicipio = videos.filter(
-      (video) => video.municipio === municipioSelecionado,
-    );
+
+    // Filtra somente os vídeos
+    // do município selecionado
+
+    videosDoMunicipio =
+      videos.filter(
+        video =>
+          video.municipio ===
+          municipioSelecionado
+      );
+
 
     preencherFiltroCategorias();
 
     atualizarCatalogo();
 
-    console.log("Vídeos do município:", videosDoMunicipio);
-  } catch (erro) {
-    console.error("Erro ao carregar os vídeos:", erro);
+
+    console.log(
+      "Vídeos do município:",
+      videosDoMunicipio
+    );
+
+  }
+
+  catch (erro) {
+
+    console.error(
+      "Erro ao carregar os vídeos:",
+      erro
+    );
 
     catalogoVideos.innerHTML = `
-            <div class="nenhum-resultado">
-                <h2>Não foi possível carregar os treinamentos</h2>
+      <div class="nenhum-resultado">
 
-                <p>
-                    Tente atualizar a página.
-                </p>
-            </div>
-        `;
+        <h2>
+          Não foi possível carregar os treinamentos
+        </h2>
+
+        <p>
+          Tente atualizar a página.
+        </p>
+
+      </div>
+    `;
+
   }
+
 }
+
 
 // ========================================
 // ATUALIZAR CATÁLOGO
 // ========================================
 
 function atualizarCatalogo() {
-  const videosFiltrados = obterVideosFiltrados();
 
-  const termoPesquisa = campoPesquisa.value.trim();
+  const videosFiltrados =
+    obterVideosFiltrados();
 
-  // Se existe pesquisa ou algum filtro selecionado,
-  // usamos a área de resultados.
+  const termoPesquisa =
+    campoPesquisa.value.trim();
+
+
+  // Se houver pesquisa ou filtros,
+  // usa a área de resultados
+
   if (
     termoPesquisa !== "" ||
-    filtroCategoria.value !== "" ||
-    filtroSubcategoria.value !== "" ||
+    categoriaSelecionada !== "" ||
+    subcategoriaSelecionada !== "" ||
     moduloSelecionado !== "Todos"
   ) {
-    catalogoVideos.style.display = "none";
 
-    mostrarResultadosPesquisa(videosFiltrados);
+    catalogoVideos.style.display =
+      "none";
+
+    mostrarResultadosPesquisa(
+      videosFiltrados
+    );
 
     return;
+
   }
 
-  // Sem filtros: mostra o catálogo normal
+
+  // Sem filtros:
+  // mostra o catálogo normal
+
   resultadoPesquisa.innerHTML = "";
 
-  catalogoVideos.style.display = "block";
+  catalogoVideos.style.display =
+    "block";
 
-  const ambulatoriais = videosFiltrados.filter(
-    (video) => video.modulo === "Ambulatorial",
+
+  const ambulatoriais =
+    videosFiltrados.filter(
+      video =>
+        video.modulo ===
+        "Ambulatorial"
+    );
+
+
+  const hospitalares =
+    videosFiltrados.filter(
+      video =>
+        video.modulo ===
+        "Hospitalar"
+    );
+
+
+  mostrarVideos(
+    ambulatoriais,
+    videosAmbulatorial
   );
 
-  const hospitalares = videosFiltrados.filter(
-    (video) => video.modulo === "Hospitalar",
+  mostrarVideos(
+    hospitalares,
+    videosHospitalar
   );
 
-  mostrarVideos(ambulatoriais, videosAmbulatorial);
-
-  mostrarVideos(hospitalares, videosHospitalar);
 }
+
 
 // ========================================
 // FILTRAR VÍDEOS
 // ========================================
 
 function obterVideosFiltrados() {
-  const termo = normalizarTexto(campoPesquisa.value.trim());
 
-  const categoriaSelecionada = filtroCategoria.value;
-
-  const subcategoriaSelecionada = filtroSubcategoria.value;
-
-  return videosDoMunicipio.filter((video) => {
-    // Pesquisa textual
-    const conteudoPesquisavel = normalizarTexto(`
-                    ${video.titulo}
-                    ${video.descricao}
-                    ${video.modulo}
-                    ${video.categoria}
-                    ${video.subcategoria}
-                    ${(video.tags || []).join(" ")}
-                `);
-
-    const correspondePesquisa =
-      termo === "" || conteudoPesquisavel.includes(termo);
-
-    // Categoria
-    const correspondeCategoria =
-      categoriaSelecionada === "" || video.categoria === categoriaSelecionada;
-
-    const correspondeModulo =
-      moduloSelecionado === "Todos" || video.modulo === moduloSelecionado;
-
-    // Subcategoria
-    const correspondeSubcategoria =
-      subcategoriaSelecionada === "" ||
-      video.subcategoria === subcategoriaSelecionada;
-
-    return (
-      correspondePesquisa &&
-      correspondeCategoria &&
-      correspondeSubcategoria &&
-      correspondeModulo
+  const termo =
+    normalizarTexto(
+      campoPesquisa.value.trim()
     );
-  });
+
+
+  return videosDoMunicipio.filter(
+    video => {
+
+      // Pesquisa textual
+
+      const conteudoPesquisavel =
+        normalizarTexto(`
+          ${video.titulo}
+          ${video.descricao}
+          ${video.modulo}
+          ${video.categoria}
+          ${video.subcategoria}
+          ${(video.tags || []).join(" ")}
+        `);
+
+
+      const correspondePesquisa =
+        termo === "" ||
+        conteudoPesquisavel.includes(
+          termo
+        );
+
+
+      // Categoria
+
+      const correspondeCategoria =
+        categoriaSelecionada === "" ||
+        video.categoria ===
+          categoriaSelecionada;
+
+
+      // Subcategoria
+
+      const correspondeSubcategoria =
+        subcategoriaSelecionada === "" ||
+        video.subcategoria ===
+          subcategoriaSelecionada;
+
+
+      // Módulo
+
+      const correspondeModulo =
+        moduloSelecionado === "Todos" ||
+        video.modulo ===
+          moduloSelecionado;
+
+
+      return (
+        correspondePesquisa &&
+        correspondeCategoria &&
+        correspondeSubcategoria &&
+        correspondeModulo
+      );
+
+    }
+  );
+
 }
 
+
 // ========================================
-// FILTRO DE CATEGORIAS
+// PREENCHER CATEGORIAS
 // ========================================
 
 function preencherFiltroCategorias() {
-  if (!filtroCategoria) {
-    return;
+
+  let videosBase =
+    videosDoMunicipio;
+
+
+  // Se houver módulo selecionado,
+  // usa somente aquele módulo
+
+  if (
+    moduloSelecionado !== "Todos"
+  ) {
+
+    videosBase =
+      videosBase.filter(
+        video =>
+          video.modulo ===
+          moduloSelecionado
+      );
+
   }
 
-  let videosBase = videosDoMunicipio;
 
-  // Se um módulo estiver selecionado,
-  // usamos apenas os vídeos daquele módulo
-  if (moduloSelecionado !== "Todos") {
-    videosBase = videosDoMunicipio.filter(
-      (video) => video.modulo === moduloSelecionado,
-    );
-  }
-
-  const categorias = [...new Set(videosBase.map((video) => video.categoria))]
+  const categorias = [
+    ...new Set(
+      videosBase.map(
+        video => video.categoria
+      )
+    )
+  ]
     .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b, "pt-BR"));
+    .sort(
+      (a, b) =>
+        a.localeCompare(
+          b,
+          "pt-BR"
+        )
+    );
 
-  filtroCategoria.innerHTML = `
-        <option value="">
-            Todas as categorias
-        </option>
-    `;
 
-  categorias.forEach((categoria) => {
-    const option = document.createElement("option");
+  opcoesCategoria.innerHTML = "";
 
-    option.value = categoria;
 
-    option.textContent = categoria;
+  // Opção padrão
 
-    filtroCategoria.appendChild(option);
-  });
+  criarOpcaoCategoria(
+    "",
+    "Todas as categorias"
+  );
+
+
+  // Categorias encontradas
+
+  categorias.forEach(
+    categoria => {
+
+      criarOpcaoCategoria(
+        categoria,
+        categoria
+      );
+
+    }
+  );
+
 
   preencherFiltroSubcategorias();
+
 }
 
+
 // ========================================
-// FILTRO DE SUBCATEGORIAS
+// CRIAR OPÇÃO DE CATEGORIA
+// ========================================
+
+function criarOpcaoCategoria(
+  valor,
+  texto
+) {
+
+  const botao =
+    document.createElement("button");
+
+  botao.type = "button";
+
+  botao.dataset.value = valor;
+
+  botao.textContent = texto;
+
+
+  // Marca visualmente
+  // a categoria atual
+
+  if (
+    valor ===
+    categoriaSelecionada
+  ) {
+
+    botao.classList.add(
+      "selecionado"
+    );
+
+  }
+
+
+  botao.addEventListener(
+    "click",
+    () => {
+
+      categoriaSelecionada =
+        valor;
+
+
+      // Ao trocar categoria,
+      // sempre limpa subcategoria
+
+      subcategoriaSelecionada =
+        "";
+
+
+      categoriaSelecionadaTexto
+        .textContent = texto;
+
+
+      subcategoriaSelecionadaTexto
+        .textContent =
+        "Todas as subcategorias";
+
+
+      selectCategoria
+        .classList.remove(
+          "aberto"
+        );
+
+
+      preencherFiltroCategorias();
+
+      atualizarCatalogo();
+
+    }
+  );
+
+
+  opcoesCategoria.appendChild(
+    botao
+  );
+
+}
+
+
+// ========================================
+// PREENCHER SUBCATEGORIAS
 // ========================================
 
 function preencherFiltroSubcategorias() {
-  if (!filtroSubcategoria) {
-    return;
+
+  let videosBase =
+    videosDoMunicipio;
+
+
+  // Primeiro filtra pelo módulo
+
+  if (
+    moduloSelecionado !== "Todos"
+  ) {
+
+    videosBase =
+      videosBase.filter(
+        video =>
+          video.modulo ===
+          moduloSelecionado
+      );
+
   }
 
-  const categoriaSelecionada = filtroCategoria.value;
-
-  let videosBase = videosDoMunicipio;
-
-  // Filtra primeiro pelo módulo
-  if (moduloSelecionado !== "Todos") {
-    videosBase = videosBase.filter(
-      (video) => video.modulo === moduloSelecionado,
-    );
-  }
 
   // Depois pela categoria
-  if (categoriaSelecionada !== "") {
-    videosBase = videosBase.filter(
-      (video) => video.categoria === categoriaSelecionada,
-    );
+
+  if (
+    categoriaSelecionada !== ""
+  ) {
+
+    videosBase =
+      videosBase.filter(
+        video =>
+          video.categoria ===
+          categoriaSelecionada
+      );
+
   }
+
 
   const subcategorias = [
-    ...new Set(videosBase.map((video) => video.subcategoria)),
+    ...new Set(
+      videosBase.map(
+        video =>
+          video.subcategoria
+      )
+    )
   ]
     .filter(Boolean)
-    .sort((a, b) => a.localeCompare(b, "pt-BR"));
+    .sort(
+      (a, b) =>
+        a.localeCompare(
+          b,
+          "pt-BR"
+        )
+    );
 
-  filtroSubcategoria.innerHTML = `
-        <option value="">
-            Todas as subcategorias
-        </option>
-    `;
 
-  subcategorias.forEach((subcategoria) => {
-    const option = document.createElement("option");
+  opcoesSubcategoria.innerHTML =
+    "";
 
-    option.value = subcategoria;
 
-    option.textContent = subcategoria;
+  criarOpcaoSubcategoria(
+    "",
+    "Todas as subcategorias"
+  );
 
-    filtroSubcategoria.appendChild(option);
-  });
+
+  subcategorias.forEach(
+    subcategoria => {
+
+      criarOpcaoSubcategoria(
+        subcategoria,
+        subcategoria
+      );
+
+    }
+  );
+
 }
 
+
 // ========================================
-// EVENTOS DOS FILTROS
+// CRIAR OPÇÃO DE SUBCATEGORIA
 // ========================================
 
-campoPesquisa.addEventListener("input", () => {
-  mostrarSugestoes();
+function criarOpcaoSubcategoria(
+  valor,
+  texto
+) {
 
-  atualizarCatalogo();
-});
+  const botao =
+    document.createElement("button");
 
-campoPesquisa.addEventListener("focus", () => {
-  if (campoPesquisa.value.trim() !== "") {
-    mostrarSugestoes();
+  botao.type = "button";
+
+  botao.dataset.value =
+    valor;
+
+  botao.textContent =
+    texto;
+
+
+  if (
+    valor ===
+    subcategoriaSelecionada
+  ) {
+
+    botao.classList.add(
+      "selecionado"
+    );
+
   }
-});
 
-if (filtroCategoria) {
-  filtroCategoria.addEventListener("change", () => {
-    // Sempre limpa a subcategoria
-    // quando a categoria muda
-    filtroSubcategoria.value = "";
 
-    preencherFiltroSubcategorias();
+  botao.addEventListener(
+    "click",
+    () => {
+
+      subcategoriaSelecionada =
+        valor;
+
+
+      subcategoriaSelecionadaTexto
+        .textContent =
+        texto;
+
+
+      selectSubcategoria
+        .classList.remove(
+          "aberto"
+        );
+
+
+      preencherFiltroSubcategorias();
+
+      atualizarCatalogo();
+
+    }
+  );
+
+
+  opcoesSubcategoria.appendChild(
+    botao
+  );
+
+}
+
+
+// ========================================
+// ABRIR DROPDOWN DE CATEGORIA
+// ========================================
+
+triggerCategoria.addEventListener(
+  "click",
+  () => {
+
+    selectCategoria
+      .classList.toggle(
+        "aberto"
+      );
+
+
+    selectSubcategoria
+      .classList.remove(
+        "aberto"
+      );
+
+  }
+);
+
+
+// ========================================
+// ABRIR DROPDOWN DE SUBCATEGORIA
+// ========================================
+
+triggerSubcategoria.addEventListener(
+  "click",
+  () => {
+
+    selectSubcategoria
+      .classList.toggle(
+        "aberto"
+      );
+
+
+    selectCategoria
+      .classList.remove(
+        "aberto"
+      );
+
+  }
+);
+
+
+// ========================================
+// PESQUISA
+// ========================================
+
+campoPesquisa.addEventListener(
+  "input",
+  () => {
+
+    mostrarSugestoes();
 
     atualizarCatalogo();
-  });
-}
 
-if (filtroSubcategoria) {
-  filtroSubcategoria.addEventListener("change", atualizarCatalogo);
-}
+  }
+);
+
+
+campoPesquisa.addEventListener(
+  "focus",
+  () => {
+
+    if (
+      campoPesquisa
+        .value
+        .trim() !== ""
+    ) {
+
+      mostrarSugestoes();
+
+    }
+
+  }
+);
+
 
 // ========================================
 // EXTRAIR ID DO YOUTUBE
 // ========================================
 
 function extrairYoutubeId(url) {
+
   try {
-    const urlYoutube = new URL(url);
 
-    // Exemplo:
+    const urlYoutube =
+      new URL(url);
+
+
     // youtube.com/watch?v=XXXX
-    if (urlYoutube.hostname.includes("youtube.com")) {
-      return urlYoutube.searchParams.get("v");
+
+    if (
+      urlYoutube.hostname.includes(
+        "youtube.com"
+      )
+    ) {
+
+      return urlYoutube
+        .searchParams
+        .get("v");
+
     }
 
-    // Exemplo:
+
     // youtu.be/XXXX
-    if (urlYoutube.hostname.includes("youtu.be")) {
-      return urlYoutube.pathname.substring(1);
+
+    if (
+      urlYoutube.hostname.includes(
+        "youtu.be"
+      )
+    ) {
+
+      return urlYoutube
+        .pathname
+        .substring(1);
+
     }
 
-    return null;
-  } catch (erro) {
-    console.error("URL do YouTube inválida:", url);
 
     return null;
+
   }
+
+  catch (erro) {
+
+    console.error(
+      "URL do YouTube inválida:",
+      url
+    );
+
+    return null;
+
+  }
+
 }
+
 
 // ========================================
 // CRIAR CARDS
 // ========================================
 
-function mostrarVideos(videos, container) {
+function mostrarVideos(
+  videos,
+  container
+) {
+
   container.innerHTML = "";
 
-  if (videos.length === 0) {
+
+  if (
+    videos.length === 0
+  ) {
+
     container.innerHTML = `
-            <p class="sem-videos">
-                Nenhum treinamento disponível no momento.
-            </p>
-        `;
+      <p class="sem-videos">
+        Nenhum treinamento disponível no momento.
+      </p>
+    `;
 
     return;
+
   }
 
-  videos.forEach((video) => {
-    const youtubeId = extrairYoutubeId(video.videoUrl);
 
-    const thumbnail = youtubeId
-      ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
-      : "";
+  videos.forEach(
+    video => {
 
-    const card = document.createElement("article");
+      const youtubeId =
+        extrairYoutubeId(
+          video.videoUrl
+        );
 
-    card.classList.add("video-card");
 
-    card.innerHTML = `
-            <div
-                class="video-thumbnail"
-                style="background-image: url('${thumbnail}')"
-            >
+      const thumbnail =
+        youtubeId
+          ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
+          : "";
 
-                <span class="video-time">
-                    ${video.duracao}
-                </span>
 
-                <span class="play-icon">
-                    ▶
-                </span>
+      const card =
+        document.createElement(
+          "article"
+        );
 
-            </div>
 
-            <div class="video-info">
+      card.classList.add(
+        "video-card"
+      );
 
-                <div class="video-classificacao">
 
-    <span class="video-modulo">
-        ${video.modulo}
-    </span>
+      card.innerHTML = `
+        <div
+          class="video-thumbnail"
+          style="background-image: url('${thumbnail}')"
+        >
 
-    <span class="video-categoria">
-        ${video.categoria} › ${video.subcategoria}
-    </span>
+          <span class="video-time">
+            ${video.duracao}
+          </span>
 
-</div>
+          <span class="play-icon">
+            ▶
+          </span>
 
-                <h3>
-                    ${video.titulo}
-                </h3>
+        </div>
 
-                <p>
-                    ${video.descricao}
-                </p>
 
-            </div>
-        `;
+        <div class="video-info">
 
-    // Abre o treinamento dentro
-    // da própria plataforma
-    card.addEventListener("click", () => {
-      localStorage.setItem("videoSelecionadoId", video.id);
+          <div class="video-classificacao">
 
-      window.location.href = "video.html";
-    });
+            <span class="video-modulo">
+              ${video.modulo}
+            </span>
 
-    container.appendChild(card);
-  });
+            <span class="video-categoria">
+              ${video.categoria}
+              ›
+              ${video.subcategoria}
+            </span>
+
+          </div>
+
+
+          <h3>
+            ${video.titulo}
+          </h3>
+
+
+          <p>
+            ${video.descricao}
+          </p>
+
+        </div>
+      `;
+
+
+      card.addEventListener(
+        "click",
+        () => {
+
+          localStorage.setItem(
+            "videoSelecionadoId",
+            video.id
+          );
+
+          window.location.href =
+            "video.html";
+
+        }
+      );
+
+
+      container.appendChild(
+        card
+      );
+
+    }
+  );
+
 }
+
 
 // ========================================
 // NORMALIZAR TEXTO
 // ========================================
 
-function normalizarTexto(texto) {
-  return String(texto || "")
+function normalizarTexto(
+  texto
+) {
+
+  return String(
+    texto || ""
+  )
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "");
+    .replace(
+      /[\u0300-\u036f]/g,
+      ""
+    );
+
 }
+
+
+// ========================================
+// SUGESTÕES DE PESQUISA
+// ========================================
 
 function mostrarSugestoes() {
-  const termo = normalizarTexto(campoPesquisa.value.trim());
 
-  sugestoesPesquisa.innerHTML = "";
-
-  // Não mostra sugestões sem texto
-  if (termo === "") {
-    sugestoesPesquisa.classList.remove("ativo");
-
-    return;
-  }
-
-  let videosBase = videosDoMunicipio;
-
-  // Respeita o módulo escolhido no navbar
-  if (moduloSelecionado !== "Todos") {
-    videosBase = videosBase.filter(
-      (video) => video.modulo === moduloSelecionado,
+  const termo =
+    normalizarTexto(
+      campoPesquisa.value.trim()
     );
-  }
 
-  const sugestoes = videosBase
-    .filter((video) => {
-      const conteudo = normalizarTexto(`
-                        ${video.titulo}
-                        ${video.categoria}
-                        ${video.subcategoria}
-                        ${(video.tags || []).join(" ")}
-                    `);
 
-      return conteudo.includes(termo);
-    })
-    .slice(0, 5);
+  sugestoesPesquisa.innerHTML =
+    "";
 
-  if (sugestoes.length === 0) {
-    sugestoesPesquisa.classList.remove("ativo");
+
+  if (
+    termo === ""
+  ) {
+
+    sugestoesPesquisa
+      .classList.remove(
+        "ativo"
+      );
 
     return;
+
   }
 
-  sugestoes.forEach((video) => {
-    const youtubeId = extrairYoutubeId(video.videoUrl);
 
-    const thumbnail = youtubeId
-      ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
-      : "";
+  let videosBase =
+    videosDoMunicipio;
 
-    const item = document.createElement("button");
 
-    item.type = "button";
+  if (
+    moduloSelecionado !== "Todos"
+  ) {
 
-    item.classList.add("sugestao-item");
+    videosBase =
+      videosBase.filter(
+        video =>
+          video.modulo ===
+          moduloSelecionado
+      );
 
-    item.innerHTML = `
-            <div
-                class="sugestao-thumbnail"
-                style="background-image: url('${thumbnail}')">
-            </div>
+  }
 
-            <div class="sugestao-info">
 
-                <strong>
-                    ${video.titulo}
-                </strong>
+  const sugestoes =
+    videosBase
+      .filter(
+        video => {
 
-                <span>
-                    ${video.modulo}
-                    ›
-                    ${video.categoria}
-                    ›
-                    ${video.subcategoria}
-                </span>
+          const conteudo =
+            normalizarTexto(`
+              ${video.titulo}
+              ${video.categoria}
+              ${video.subcategoria}
+              ${(video.tags || []).join(" ")}
+            `);
 
-            </div>
 
-            <span class="sugestao-play">
-                ▶
-            </span>
-        `;
+          return conteudo.includes(
+            termo
+          );
 
-    item.addEventListener("click", () => {
-      localStorage.setItem("videoSelecionadoId", video.id);
+        }
+      )
+      .slice(0, 5);
 
-      window.location.href = "video.html";
-    });
 
-    sugestoesPesquisa.appendChild(item);
-  });
+  if (
+    sugestoes.length === 0
+  ) {
 
-  sugestoesPesquisa.classList.add("ativo");
+    sugestoesPesquisa
+      .classList.remove(
+        "ativo"
+      );
+
+    return;
+
+  }
+
+
+  sugestoes.forEach(
+    video => {
+
+      const youtubeId =
+        extrairYoutubeId(
+          video.videoUrl
+        );
+
+
+      const thumbnail =
+        youtubeId
+          ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
+          : "";
+
+
+      const item =
+        document.createElement(
+          "button"
+        );
+
+
+      item.type =
+        "button";
+
+
+      item.classList.add(
+        "sugestao-item"
+      );
+
+
+      item.innerHTML = `
+        <div
+          class="sugestao-thumbnail"
+          style="background-image: url('${thumbnail}')"
+        >
+        </div>
+
+
+        <div class="sugestao-info">
+
+          <strong>
+            ${video.titulo}
+          </strong>
+
+
+          <span>
+            ${video.modulo}
+            ›
+            ${video.categoria}
+            ›
+            ${video.subcategoria}
+          </span>
+
+        </div>
+
+
+        <span class="sugestao-play">
+          ▶
+        </span>
+      `;
+
+
+      item.addEventListener(
+        "click",
+        () => {
+
+          localStorage.setItem(
+            "videoSelecionadoId",
+            video.id
+          );
+
+          window.location.href =
+            "video.html";
+
+        }
+      );
+
+
+      sugestoesPesquisa
+        .appendChild(
+          item
+        );
+
+    }
+  );
+
+
+  sugestoesPesquisa
+    .classList.add(
+      "ativo"
+    );
+
 }
 
-document.addEventListener("click", (event) => {
-  const clicouNaBusca = campoPesquisa.contains(event.target);
 
-  const clicouNasSugestoes = sugestoesPesquisa.contains(event.target);
+// ========================================
+// FECHAR ELEMENTOS AO CLICAR FORA
+// ========================================
 
-  if (!clicouNaBusca && !clicouNasSugestoes) {
-    sugestoesPesquisa.classList.remove("ativo");
+document.addEventListener(
+  "click",
+  event => {
+
+    // Pesquisa
+
+    const clicouNaBusca =
+      campoPesquisa.contains(
+        event.target
+      );
+
+    const clicouNasSugestoes =
+      sugestoesPesquisa.contains(
+        event.target
+      );
+
+
+    if (
+      !clicouNaBusca &&
+      !clicouNasSugestoes
+    ) {
+
+      sugestoesPesquisa
+        .classList.remove(
+          "ativo"
+        );
+
+    }
+
+
+    // Categoria
+
+    if (
+      !selectCategoria.contains(
+        event.target
+      )
+    ) {
+
+      selectCategoria
+        .classList.remove(
+          "aberto"
+        );
+
+    }
+
+
+    // Subcategoria
+
+    if (
+      !selectSubcategoria.contains(
+        event.target
+      )
+    ) {
+
+      selectSubcategoria
+        .classList.remove(
+          "aberto"
+        );
+
+    }
+
   }
-});
+);
+
 
 // ========================================
 // RESULTADOS DA PESQUISA / FILTROS
 // ========================================
 
-function mostrarResultadosPesquisa(videos) {
-  resultadoPesquisa.innerHTML = "";
+function mostrarResultadosPesquisa(
+  videos
+) {
 
-  if (videos.length === 0) {
+  resultadoPesquisa.innerHTML =
+    "";
+
+
+  if (
+    videos.length === 0
+  ) {
+
     resultadoPesquisa.innerHTML = `
-            <div class="nenhum-resultado">
+      <div class="nenhum-resultado">
 
-                <h2>
-                    Nenhum treinamento encontrado
-                </h2>
+        <h2>
+          Nenhum treinamento encontrado
+        </h2>
 
-                <p>
-                    Tente pesquisar usando outras palavras
-                    ou alterar os filtros selecionados.
-                </p>
+        <p>
+          Tente pesquisar usando outras palavras
+          ou alterar os filtros selecionados.
+        </p>
 
-            </div>
-        `;
+      </div>
+    `;
 
     return;
+
   }
 
-  const titulo = document.createElement("h2");
 
-  titulo.classList.add("titulo-resultados");
+  const titulo =
+    document.createElement(
+      "h2"
+    );
 
-  titulo.textContent = `${videos.length} treinamento${
-    videos.length > 1 ? "s" : ""
-  } encontrado${videos.length > 1 ? "s" : ""}`;
 
-  resultadoPesquisa.appendChild(titulo);
+  titulo.classList.add(
+    "titulo-resultados"
+  );
 
-  const container = document.createElement("div");
 
-  container.classList.add("resultado-grid");
+  titulo.textContent =
+    `${videos.length} treinamento${
+      videos.length > 1 ? "s" : ""
+    } encontrado${
+      videos.length > 1 ? "s" : ""
+    }`;
 
-  resultadoPesquisa.appendChild(container);
 
-  mostrarVideos(videos, container);
+  resultadoPesquisa
+    .appendChild(
+      titulo
+    );
+
+
+  const container =
+    document.createElement(
+      "div"
+    );
+
+
+  container.classList.add(
+    "resultado-grid"
+  );
+
+
+  resultadoPesquisa
+    .appendChild(
+      container
+    );
+
+
+  mostrarVideos(
+    videos,
+    container
+  );
+
 }
 
-navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    moduloSelecionado = link.dataset.modulo;
 
-    if (moduloSelecionado === "Ambulatorial") {
-      tituloCatalogo.textContent = "Treinamentos Ambulatoriais";
-    } else if (moduloSelecionado === "Hospitalar") {
-      tituloCatalogo.textContent = "Treinamentos Hospitalares";
-    } else {
-      tituloCatalogo.textContent = "Treinamentos";
-    }
+// ========================================
+// NAVBAR
+// ========================================
 
-    // Atualiza destaque visual
-    navLinks.forEach((item) => {
-      item.classList.remove("ativo");
-    });
+navLinks.forEach(
+  link => {
 
-    link.classList.add("ativo");
+    link.addEventListener(
+      "click",
+      () => {
 
-    // Limpa filtros anteriores
-    filtroCategoria.value = "";
-    filtroSubcategoria.value = "";
+        moduloSelecionado =
+          link.dataset.modulo;
 
-    // Reconstrói os filtros
-    // conforme o módulo escolhido
+
+        // Título
+
+        if (
+          moduloSelecionado ===
+          "Ambulatorial"
+        ) {
+
+          tituloCatalogo.textContent =
+            "Treinamentos Ambulatoriais";
+
+        }
+
+        else if (
+          moduloSelecionado ===
+          "Hospitalar"
+        ) {
+
+          tituloCatalogo.textContent =
+            "Treinamentos Hospitalares";
+
+        }
+
+        else {
+
+          tituloCatalogo.textContent =
+            "Treinamentos";
+
+        }
+
+
+        // Destaque visual
+
+        navLinks.forEach(
+          item => {
+
+            item.classList.remove(
+              "ativo"
+            );
+
+          }
+        );
+
+
+        link.classList.add(
+          "ativo"
+        );
+
+
+        // Limpa categoria
+        // e subcategoria
+
+        categoriaSelecionada =
+          "";
+
+        subcategoriaSelecionada =
+          "";
+
+
+        categoriaSelecionadaTexto
+          .textContent =
+          "Todas as categorias";
+
+
+        subcategoriaSelecionadaTexto
+          .textContent =
+          "Todas as subcategorias";
+
+
+        // Reconstrói filtros
+        // conforme o módulo
+
+        preencherFiltroCategorias();
+
+
+        // Atualiza vídeos
+
+        atualizarCatalogo();
+
+      }
+    );
+
+  }
+);
+
+
+// ========================================
+// LIMPAR FILTROS
+// ========================================
+
+btnLimparFiltros.addEventListener(
+  "click",
+  () => {
+
+    // Pesquisa
+
+    campoPesquisa.value =
+      "";
+
+
+    // Categoria
+
+    categoriaSelecionada =
+      "";
+
+
+    categoriaSelecionadaTexto
+      .textContent =
+      "Todas as categorias";
+
+
+    // Subcategoria
+
+    subcategoriaSelecionada =
+      "";
+
+
+    subcategoriaSelecionadaTexto
+      .textContent =
+      "Todas as subcategorias";
+
+
+    // Fecha dropdowns
+
+    selectCategoria
+      .classList.remove(
+        "aberto"
+      );
+
+    selectSubcategoria
+      .classList.remove(
+        "aberto"
+      );
+
+
+    // Reconstrói filtros
+
     preencherFiltroCategorias();
 
-    // Atualiza os vídeos
+
+    // Fecha sugestões
+
+    sugestoesPesquisa.innerHTML =
+      "";
+
+    sugestoesPesquisa
+      .classList.remove(
+        "ativo"
+      );
+
+
+    // Atualiza catálogo
+
     atualizarCatalogo();
-  });
-});
+
+  }
+);
+
 
 // ========================================
 // INICIAR
 // ========================================
-
-btnLimparFiltros.addEventListener("click", () => {
-
-    // Limpa pesquisa
-    campoPesquisa.value = "";
-
-    // Limpa categoria
-    filtroCategoria.value = "";
-
-    // Reconstrói as subcategorias
-    preencherFiltroSubcategorias();
-
-    // Limpa subcategoria
-    filtroSubcategoria.value = "";
-
-    // Fecha sugestões
-    sugestoesPesquisa.innerHTML = "";
-    sugestoesPesquisa.classList.remove("ativo");
-
-    // Atualiza o catálogo
-    atualizarCatalogo();
-
-});
 
 carregarVideos();
