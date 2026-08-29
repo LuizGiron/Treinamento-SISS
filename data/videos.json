@@ -168,5 +168,465 @@
   "duracao": "02:55",
   "plataforma": "sharepoint",
   "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=8e0c8569-bae4-4c37-ac49-f7ddc3195f0d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 21,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Atendimenteo médico para emergência",
+  "descricao": "Como atender pacientes em situação de emergência no módulo Hospitalar.",
+  "tags": [
+    "Atendimento",
+    "Médico",
+    "prontuário eletrônico",
+    "emergência"
+  ],
+  "duracao": "00:24",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbProntuarioEletronico.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=b6793dd6-de9d-4613-b381-dbe594e15043&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 22,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Recepção de Pacientes",
+  "subcategoria": "Recepção",
+  "titulo": "Fluxo de recepção de pacientes (Emergência)",
+  "descricao": "Como atender abrir FAA de pacientes.",
+  "tags": [
+    "Atendimento",
+    "Recepção",
+    "FAA",
+    "Pacientes",
+    "emergência"
+  ],
+  "duracao": "00:25",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbRecepção.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=26f20c42-9dc1-4c96-871d-67dfefc5fe2e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 23,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Triagem e Acolhimento",
+  "titulo": "Fluxo triagem e acolhimento de pacientes (Emergência)",
+  "descricao": "Como triar pacientes.",
+  "tags": [
+    "Triagem",
+    "Acolhimento",
+    "emergência",
+    "prontuário eletrônico"
+  ],
+  "duracao": "01:15",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbTriagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=26f20c42-9dc1-4c96-871d-67dfefc5fe2e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+  
+{
+  "id": 24,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Triagem e Acolhimento",
+  "titulo": "Fluxo triagem e acolhimento de pacientes (Emergência)",
+  "descricao": "Como triar pacientes.",
+  "tags": [
+    "Triagem",
+    "Acolhimento",
+    "emergência",
+    "prontuário eletrônico"
+  ],
+  "duracao": "01:15",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbTriagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=26f20c42-9dc1-4c96-871d-67dfefc5fe2e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 25,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Faturamento",
+  "subcategoria": "Faturamento",
+  "titulo": "Criando lotes",
+  "descricao": "Como gerar lotes para faturamento.",
+  "tags": [
+    "Faturamento",
+    "Lotes"
+  ],
+  "duracao": "02:09",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbFaturamento.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=14c31715-2c0c-40e0-b4f8-8b5b3393706d&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 26,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Faturamento",
+  "subcategoria": "Faturamento",
+  "titulo": "Gerando arquivo mensal",
+  "descricao": "Como gerar o arquivo mensal para faturamento.",
+  "tags": [
+    "Faturamento",
+    "Arquivo Mensal"
+  ],
+  "duracao": "01:00",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbFaturamento.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=c6187645-d9d6-47af-a142-a2c3de62b359&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 27,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Faturamento",
+  "subcategoria": "Faturamento",
+  "titulo": "Relatório de críticas",
+  "descricao": "Fluxo de como gerar o relatório de críticas.",
+  "tags": [
+    "Faturamento",
+    "Relatório de críticas"
+  ],
+  "duracao": "01:30",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbFaturamento.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=d4362ecb-f13b-412a-9140-c5317baa142a&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 28,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Faturamento",
+  "subcategoria": "Checkout",
+  "titulo": "Realizando o checkout",
+  "descricao": "Fluxo de como realizar o checkout.",
+  "tags": [
+    "Faturamento",
+    "checkout"
+  ],
+  "duracao": "03:55",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbCheckout.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=2c44ca0e-0328-45d8-9c81-6329fd961958&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 29,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Localizando o paciente",
+  "descricao": "Fluxo de como localizar o paciente.",
+  "tags": [
+    "Enfermagem",
+    "Localização",
+    "Paciente",
+    "Enfermeiro(a)"
+  ],
+  "duracao": "00:33",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=2a96b7c6-c75f-4fcf-8593-3b98004a1263&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 30,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Histórico de Enfermagem",
+  "descricao": "Fluxo de como visualizar o histórico de enfermagem.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Histórico",
+    "Enfermeiro(a)",
+    "visualizar"
+  ],
+  "duracao": "01:57",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=a322473d-f365-4f37-9bd5-fe2a8c36e6bc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 31,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Diagnóstico NANDA",
+  "descricao": "Fluxo de como realizar o diagnóstico NANDA.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "diagnóstico",
+    "NANDA"
+  ],
+  "duracao": "00:52",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=f289083c-356a-4470-b0b3-4bb4278b94d5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 32,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Prescrição de Enfermagem",
+  "descricao": "Fluxo de como realizar a prescrição de enfermagem.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "prescrição"
+  ],
+  "duracao": "00:55",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=ee8146e5-7992-4783-8d8c-d9e399a8bcf5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+{
+  "id": 33,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Excluindo e Alterando os Horários das prescrições de Enfermagem",
+  "descricao": "Fluxo de como excluir e alterar os horários das prescrições de enfermagem.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "prescrição",
+    "excluir",
+    "alterar",
+    "horários"
+  ],
+  "duracao": "00:52",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=153cddcd-4ca2-46d8-a4ef-b6f92e88c302&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 34,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Confirmando prescrições de Enfermagem",
+  "descricao": "Fluxo de como realizar a confirmação das prescrições de enfermagem.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "prescrição",
+    "confirmação"
+  ],
+  "duracao": "00:39",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=fce774cc-5bf4-4b68-97b8-4e1185e22507&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 35,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Repetindo Prescrição e Excluindo um Cuidado",
+  "descricao": "Fluxo de como realizar a repetição de prescrições e a exclusão de um cuidado.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "prescrição",
+    "repetição",
+    "exclusão",
+    "cuidado"
+  ],
+  "duracao": "00:48",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=50ce7c5b-fcaf-49db-b40e-1e376007c4d6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 36,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Evolução de Enfermagem",
+  "descricao": "Fluxo de como realizar a evolução de enfermagem.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "evolução"
+  ],
+  "duracao": "01:29",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=3a8e8126-02e6-4d76-9a20-03ae7d452d1f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 37,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Enfermagem",
+  "titulo": "Escalas (Forma de preenchimento igual para todas)",
+  "descricao": "Fluxo de como realizar o preenchimento das escalas.",
+  "tags": [
+    "Enfermagem",
+    "Fluxo",
+    "Atendimento",
+    "Enfermeiro(a)",
+    "escalas",
+    "preenchimento"
+  ],
+  "duracao": "00:50",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbEnfermagem.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=a7688c5e-1ed2-4577-855f-bf519af8c760&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 38,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Localizando o paciente",
+  "descricao": "Fluxo de como localizar o paciente.",
+  "tags": [
+    "Prontuário Eletrônico",
+    "Fluxo",
+    "Atendimento",
+    "Médico(a)",
+    "localização",
+    "paciente"
+  ],
+  "duracao": "00:50",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbProntuarioEletronico.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=a0656482-86f7-418c-abd4-65fcc3ec04f6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 39,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Exame Físico",
+  "descricao": "Fluxo de como preencher o exame físico.",
+  "tags": [
+    "Prontuário Eletrônico",
+    "Fluxo",
+    "Atendimento",
+    "Médico(a)",
+    "exame",
+    "físico"
+  ],
+  "duracao": "00:22",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbProntuarioEletronico.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=504f4606-366b-4551-b38d-c18d79c42252&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 40,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Diagnóstico Médico",
+  "descricao": "Fluxo de como preencher o diagnóstico médico.",
+  "tags": [
+    "Prontuário Eletrônico",
+    "Fluxo",
+    "Atendimento",
+    "Médico(a)",
+    "diagnóstico",
+    "médico"
+  ],
+  "duracao": "00:46",
+  "plataforma": "sharepoint",
+  "thumbnailUrl": "img/ThumbProntuarioEletronico.png",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=25017f19-e358-42bb-8a94-2f330c3257d1&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+},
+
+{
+  "id": 41,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Prescrição Médica",
+  "descricao": "Fluxo de como realizar a prescrição médica.",
+  "tags": [
+    "Prontuário Eletrônico",
+    "Fluxo",
+    "Atendimento",
+    "Médico(a)",
+    "prescrição",
+    "médica"
+  ],
+  "duracao": "02:05",
+  "plataforma": "sharepoint",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=0383798d-e62d-4905-a6d8-c6a184ccd67c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create",
+  "thumbnailUrl": "img/ThumbProntuarioEletronico.png"
+},
+
+{
+  "id": 42,
+  "municipio": "Osasco",
+  "modulo": "Hospitalar",
+  "categoria": "Prontuário Eletrônico",
+  "subcategoria": "Prontuário Eletrônico",
+  "titulo": "Preenchendo Evolução do Paciente",
+  "descricao": "Fluxo de como preencher a evolução do paciente.",
+  "tags": [
+    "Prontuário Eletrônico",
+    "Fluxo",
+    "Atendimento",
+    "Médico(a)",
+    "prescrição",
+    "excluir",
+    "alterar",
+    "horários"
+  ],
+  "duracao": "00:52",
+  "plataforma": "sharepoint",
+  "videoUrl": "https://eicontecnogroup.sharepoint.com/sites/siss.teams/_layouts/15/embed.aspx?UniqueId=3f0c1b6d-4a2e-4f5b-8c9e-1f2b3c4d5e6f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
 }
 ]

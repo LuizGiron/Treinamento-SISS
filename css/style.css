@@ -120,6 +120,9 @@ body {
 /* HEADER */
 
 .catalogo-header {
+  position: sticky;
+  top: 0; 
+  z-index: 2000;
   height: 72px;
   background: #379566;
 
@@ -1564,4 +1567,102 @@ body {
 
 .btn-video-externo:hover {
     background: #2f8058;
+}
+/* ========================================
+   CARROSSEL DE VÍDEOS
+======================================== */
+
+.carrossel-wrapper {
+    position: relative;
+    padding: 0 55px;
+}
+
+.video-row {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+
+/* SETAS */
+
+.carrossel-seta {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 44px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(20, 30, 35, 0.9);
+
+    color: #ffffff;
+
+    font-size: 34px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition:
+        opacity 0.2s,
+        background 0.2s;
+}
+
+
+.carrossel-seta:hover {
+    background: #299866;
+}
+
+
+/* SETA ESQUERDA */
+
+.carrossel-esquerda {
+    left: 0;
+}
+
+
+/* SETA DIREITA */
+
+.carrossel-direita {
+    right: 0;
+}
+
+
+/* ESCONDER SETA */
+
+.carrossel-seta.oculta {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .carrossel-wrapper {
+        padding: 0;
+    }
+
+    .carrossel-seta {
+        display: none;
+    }
+
+}
+.video-row {
+    scrollbar-width: none;
+}
+
+.video-row::-webkit-scrollbar {
+    display: none;
 }

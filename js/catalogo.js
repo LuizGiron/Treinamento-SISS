@@ -74,7 +74,9 @@ const opcoesCategoria =
   document.getElementById("opcoesCategoria");
 
 const categoriaSelecionadaTexto =
-  document.getElementById("categoriaSelecionadaTexto");
+  document.getElementById(
+    "categoriaSelecionadaTexto"
+  );
 
 
 // ========================================
@@ -85,13 +87,19 @@ const selectSubcategoria =
   document.getElementById("selectSubcategoria");
 
 const triggerSubcategoria =
-  selectSubcategoria.querySelector(".select-trigger");
+  selectSubcategoria.querySelector(
+    ".select-trigger"
+  );
 
 const opcoesSubcategoria =
-  document.getElementById("opcoesSubcategoria");
+  document.getElementById(
+    "opcoesSubcategoria"
+  );
 
 const subcategoriaSelecionadaTexto =
-  document.getElementById("subcategoriaSelecionadaTexto");
+  document.getElementById(
+    "subcategoriaSelecionadaTexto"
+  );
 
 
 // ========================================
@@ -100,7 +108,8 @@ const subcategoriaSelecionadaTexto =
 
 if (!municipioSelecionado) {
 
-  window.location.href = "index.html";
+  window.location.href =
+    "index.html";
 
 } else {
 
@@ -117,20 +126,23 @@ if (!municipioSelecionado) {
 // TROCAR MUNICÍPIO
 // ========================================
 
-btnTrocarMunicipio.addEventListener("click", () => {
+btnTrocarMunicipio.addEventListener(
+  "click",
+  () => {
 
-  localStorage.removeItem(
-    "municipioSelecionado"
-  );
+    localStorage.removeItem(
+      "municipioSelecionado"
+    );
 
-  localStorage.removeItem(
-    "videoSelecionadoId"
-  );
+    localStorage.removeItem(
+      "videoSelecionadoId"
+    );
 
-  window.location.href =
-    "index.html";
+    window.location.href =
+      "index.html";
 
-});
+  }
+);
 
 
 // ========================================
@@ -156,9 +168,6 @@ async function carregarVideos() {
       await resposta.json();
 
 
-    // Filtra somente os vídeos
-    // do município selecionado
-
     videosDoMunicipio =
       videos.filter(
         video =>
@@ -177,14 +186,13 @@ async function carregarVideos() {
       videosDoMunicipio
     );
 
-  }
-
-  catch (erro) {
+  } catch (erro) {
 
     console.error(
       "Erro ao carregar os vídeos:",
       erro
     );
+
 
     catalogoVideos.innerHTML = `
       <div class="nenhum-resultado">
@@ -218,9 +226,6 @@ function atualizarCatalogo() {
     campoPesquisa.value.trim();
 
 
-  // Se houver pesquisa ou filtros,
-  // usa a área de resultados
-
   if (
     termoPesquisa !== "" ||
     categoriaSelecionada !== "" ||
@@ -240,10 +245,8 @@ function atualizarCatalogo() {
   }
 
 
-  // Sem filtros:
-  // mostra o catálogo normal
-
-  resultadoPesquisa.innerHTML = "";
+  resultadoPesquisa.innerHTML =
+    "";
 
   catalogoVideos.style.display =
     "block";
@@ -270,10 +273,14 @@ function atualizarCatalogo() {
     videosAmbulatorial
   );
 
+
   mostrarVideos(
     hospitalares,
     videosHospitalar
   );
+
+
+  adicionarSetasCarrossel();
 
 }
 
@@ -293,8 +300,6 @@ function obterVideosFiltrados() {
   return videosDoMunicipio.filter(
     video => {
 
-      // Pesquisa textual
-
       const conteudoPesquisavel =
         normalizarTexto(`
           ${video.titulo}
@@ -313,23 +318,17 @@ function obterVideosFiltrados() {
         );
 
 
-      // Categoria
-
       const correspondeCategoria =
         categoriaSelecionada === "" ||
         video.categoria ===
           categoriaSelecionada;
 
 
-      // Subcategoria
-
       const correspondeSubcategoria =
         subcategoriaSelecionada === "" ||
         video.subcategoria ===
           subcategoriaSelecionada;
 
-
-      // Módulo
 
       const correspondeModulo =
         moduloSelecionado === "Todos" ||
@@ -360,9 +359,6 @@ function preencherFiltroCategorias() {
     videosDoMunicipio;
 
 
-  // Se houver módulo selecionado,
-  // usa somente aquele módulo
-
   if (
     moduloSelecionado !== "Todos"
   ) {
@@ -380,7 +376,8 @@ function preencherFiltroCategorias() {
   const categorias = [
     ...new Set(
       videosBase.map(
-        video => video.categoria
+        video =>
+          video.categoria
       )
     )
   ]
@@ -394,18 +391,15 @@ function preencherFiltroCategorias() {
     );
 
 
-  opcoesCategoria.innerHTML = "";
+  opcoesCategoria.innerHTML =
+    "";
 
-
-  // Opção padrão
 
   criarOpcaoCategoria(
     "",
     "Todas as categorias"
   );
 
-
-  // Categorias encontradas
 
   categorias.forEach(
     categoria => {
@@ -434,17 +428,20 @@ function criarOpcaoCategoria(
 ) {
 
   const botao =
-    document.createElement("button");
-
-  botao.type = "button";
-
-  botao.dataset.value = valor;
-
-  botao.textContent = texto;
+    document.createElement(
+      "button"
+    );
 
 
-  // Marca visualmente
-  // a categoria atual
+  botao.type =
+    "button";
+
+  botao.dataset.value =
+    valor;
+
+  botao.textContent =
+    texto;
+
 
   if (
     valor ===
@@ -466,26 +463,21 @@ function criarOpcaoCategoria(
         valor;
 
 
-      // Ao trocar categoria,
-      // sempre limpa subcategoria
-
       subcategoriaSelecionada =
         "";
 
 
-      categoriaSelecionadaTexto
-        .textContent = texto;
+      categoriaSelecionadaTexto.textContent =
+        texto;
 
 
-      subcategoriaSelecionadaTexto
-        .textContent =
+      subcategoriaSelecionadaTexto.textContent =
         "Todas as subcategorias";
 
 
-      selectCategoria
-        .classList.remove(
-          "aberto"
-        );
+      selectCategoria.classList.remove(
+        "aberto"
+      );
 
 
       preencherFiltroCategorias();
@@ -513,8 +505,6 @@ function preencherFiltroSubcategorias() {
     videosDoMunicipio;
 
 
-  // Primeiro filtra pelo módulo
-
   if (
     moduloSelecionado !== "Todos"
   ) {
@@ -528,8 +518,6 @@ function preencherFiltroSubcategorias() {
 
   }
 
-
-  // Depois pela categoria
 
   if (
     categoriaSelecionada !== ""
@@ -597,9 +585,13 @@ function criarOpcaoSubcategoria(
 ) {
 
   const botao =
-    document.createElement("button");
+    document.createElement(
+      "button"
+    );
 
-  botao.type = "button";
+
+  botao.type =
+    "button";
 
   botao.dataset.value =
     valor;
@@ -628,15 +620,13 @@ function criarOpcaoSubcategoria(
         valor;
 
 
-      subcategoriaSelecionadaTexto
-        .textContent =
+      subcategoriaSelecionadaTexto.textContent =
         texto;
 
 
-      selectSubcategoria
-        .classList.remove(
-          "aberto"
-        );
+      selectSubcategoria.classList.remove(
+        "aberto"
+      );
 
 
       preencherFiltroSubcategorias();
@@ -655,46 +645,40 @@ function criarOpcaoSubcategoria(
 
 
 // ========================================
-// ABRIR DROPDOWN DE CATEGORIA
+// ABRIR DROPDOWN CATEGORIA
 // ========================================
 
 triggerCategoria.addEventListener(
   "click",
   () => {
 
-    selectCategoria
-      .classList.toggle(
-        "aberto"
-      );
+    selectCategoria.classList.toggle(
+      "aberto"
+    );
 
-
-    selectSubcategoria
-      .classList.remove(
-        "aberto"
-      );
+    selectSubcategoria.classList.remove(
+      "aberto"
+    );
 
   }
 );
 
 
 // ========================================
-// ABRIR DROPDOWN DE SUBCATEGORIA
+// ABRIR DROPDOWN SUBCATEGORIA
 // ========================================
 
 triggerSubcategoria.addEventListener(
   "click",
   () => {
 
-    selectSubcategoria
-      .classList.toggle(
-        "aberto"
-      );
+    selectSubcategoria.classList.toggle(
+      "aberto"
+    );
 
-
-    selectCategoria
-      .classList.remove(
-        "aberto"
-      );
+    selectCategoria.classList.remove(
+      "aberto"
+    );
 
   }
 );
@@ -721,9 +705,7 @@ campoPesquisa.addEventListener(
   () => {
 
     if (
-      campoPesquisa
-        .value
-        .trim() !== ""
+      campoPesquisa.value.trim() !== ""
     ) {
 
       mostrarSugestoes();
@@ -746,22 +728,18 @@ function extrairYoutubeId(url) {
       new URL(url);
 
 
-    // youtube.com/watch?v=XXXX
-
     if (
       urlYoutube.hostname.includes(
         "youtube.com"
       )
     ) {
 
-      return urlYoutube
-        .searchParams
-        .get("v");
+      return urlYoutube.searchParams.get(
+        "v"
+      );
 
     }
 
-
-    // youtu.be/XXXX
 
     if (
       urlYoutube.hostname.includes(
@@ -769,28 +747,92 @@ function extrairYoutubeId(url) {
       )
     ) {
 
-      return urlYoutube
-        .pathname
-        .substring(1);
+      return urlYoutube.pathname.substring(
+        1
+      );
 
     }
 
 
     return null;
 
-  }
-
-  catch (erro) {
-
-    console.error(
-      "URL do YouTube inválida:",
-      url
-    );
+  } catch (erro) {
 
     return null;
 
   }
 
+}
+
+
+// ========================================
+// IDENTIFICAR PLATAFORMA
+// ========================================
+
+function identificarPlataforma(video) {
+
+  if (video.plataforma) {
+
+    return video.plataforma.toLowerCase();
+
+  }
+
+
+  const url =
+    String(
+      video.videoUrl || ""
+    ).toLowerCase();
+
+
+  if (
+    url.includes("youtube.com") ||
+    url.includes("youtu.be")
+  ) {
+
+    return "youtube";
+
+  }
+
+
+  if (
+    url.includes("sharepoint.com")
+  ) {
+
+    return "sharepoint";
+
+  }
+
+
+  return "externo";
+
+}
+
+
+// ========================================
+// OBTER THUMBNAIL
+// ========================================
+
+function obterThumbnail(video) {
+
+  const plataforma =
+    identificarPlataforma(video);
+
+  if (plataforma === "youtube") {
+
+    const youtubeId =
+      extrairYoutubeId(video.videoUrl);
+
+    if (youtubeId) {
+      return `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`;
+    }
+
+  }
+
+  if (video.thumbnailUrl) {
+    return video.thumbnailUrl;
+  }
+
+  return "img/ThumbPadrao.png";
 }
 
 
@@ -803,7 +845,8 @@ function mostrarVideos(
   container
 ) {
 
-  container.innerHTML = "";
+  container.innerHTML =
+    "";
 
 
   if (
@@ -824,16 +867,8 @@ function mostrarVideos(
   videos.forEach(
     video => {
 
-      const youtubeId =
-        extrairYoutubeId(
-          video.videoUrl
-        );
-
-
       const thumbnail =
-        youtubeId
-          ? `https://img.youtube.com/vi/${youtubeId}/hqdefault.jpg`
-          : "";
+        obterThumbnail(video);
 
 
       const card =
@@ -850,7 +885,11 @@ function mostrarVideos(
       card.innerHTML = `
         <div
           class="video-thumbnail"
-          style="background-image: url('${thumbnail}')"
+          ${
+            thumbnail
+              ? `style="background-image: url('${thumbnail}')"`
+              : ""
+          }
         >
 
           <span class="video-time">
@@ -924,9 +963,7 @@ function mostrarVideos(
 // NORMALIZAR TEXTO
 // ========================================
 
-function normalizarTexto(
-  texto
-) {
+function normalizarTexto(texto) {
 
   return String(
     texto || ""
@@ -961,10 +998,9 @@ function mostrarSugestoes() {
     termo === ""
   ) {
 
-    sugestoesPesquisa
-      .classList.remove(
-        "ativo"
-      );
+    sugestoesPesquisa.classList.remove(
+      "ativo"
+    );
 
     return;
 
@@ -1016,10 +1052,9 @@ function mostrarSugestoes() {
     sugestoes.length === 0
   ) {
 
-    sugestoesPesquisa
-      .classList.remove(
-        "ativo"
-      );
+    sugestoesPesquisa.classList.remove(
+      "ativo"
+    );
 
     return;
 
@@ -1029,16 +1064,8 @@ function mostrarSugestoes() {
   sugestoes.forEach(
     video => {
 
-      const youtubeId =
-        extrairYoutubeId(
-          video.videoUrl
-        );
-
-
       const thumbnail =
-        youtubeId
-          ? `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`
-          : "";
+        obterThumbnail(video);
 
 
       const item =
@@ -1050,7 +1077,6 @@ function mostrarSugestoes() {
       item.type =
         "button";
 
-
       item.classList.add(
         "sugestao-item"
       );
@@ -1059,7 +1085,11 @@ function mostrarSugestoes() {
       item.innerHTML = `
         <div
           class="sugestao-thumbnail"
-          style="background-image: url('${thumbnail}')"
+          ${
+            thumbnail
+              ? `style="background-image: url('${thumbnail}')"`
+              : ""
+          }
         >
         </div>
 
@@ -1104,19 +1134,17 @@ function mostrarSugestoes() {
       );
 
 
-      sugestoesPesquisa
-        .appendChild(
-          item
-        );
+      sugestoesPesquisa.appendChild(
+        item
+      );
 
     }
   );
 
 
-  sugestoesPesquisa
-    .classList.add(
-      "ativo"
-    );
+  sugestoesPesquisa.classList.add(
+    "ativo"
+  );
 
 }
 
@@ -1128,8 +1156,6 @@ function mostrarSugestoes() {
 document.addEventListener(
   "click",
   event => {
-
-    // Pesquisa
 
     const clicouNaBusca =
       campoPesquisa.contains(
@@ -1147,15 +1173,12 @@ document.addEventListener(
       !clicouNasSugestoes
     ) {
 
-      sugestoesPesquisa
-        .classList.remove(
-          "ativo"
-        );
+      sugestoesPesquisa.classList.remove(
+        "ativo"
+      );
 
     }
 
-
-    // Categoria
 
     if (
       !selectCategoria.contains(
@@ -1163,15 +1186,12 @@ document.addEventListener(
       )
     ) {
 
-      selectCategoria
-        .classList.remove(
-          "aberto"
-        );
+      selectCategoria.classList.remove(
+        "aberto"
+      );
 
     }
 
-
-    // Subcategoria
 
     if (
       !selectSubcategoria.contains(
@@ -1179,10 +1199,9 @@ document.addEventListener(
       )
     ) {
 
-      selectSubcategoria
-        .classList.remove(
-          "aberto"
-        );
+      selectSubcategoria.classList.remove(
+        "aberto"
+      );
 
     }
 
@@ -1239,16 +1258,19 @@ function mostrarResultadosPesquisa(
 
   titulo.textContent =
     `${videos.length} treinamento${
-      videos.length > 1 ? "s" : ""
+      videos.length > 1
+        ? "s"
+        : ""
     } encontrado${
-      videos.length > 1 ? "s" : ""
+      videos.length > 1
+        ? "s"
+        : ""
     }`;
 
 
-  resultadoPesquisa
-    .appendChild(
-      titulo
-    );
+  resultadoPesquisa.appendChild(
+    titulo
+  );
 
 
   const container =
@@ -1262,10 +1284,9 @@ function mostrarResultadosPesquisa(
   );
 
 
-  resultadoPesquisa
-    .appendChild(
-      container
-    );
+  resultadoPesquisa.appendChild(
+    container
+  );
 
 
   mostrarVideos(
@@ -1291,8 +1312,6 @@ navLinks.forEach(
           link.dataset.modulo;
 
 
-        // Título
-
         if (
           moduloSelecionado ===
           "Ambulatorial"
@@ -1301,9 +1320,7 @@ navLinks.forEach(
           tituloCatalogo.textContent =
             "Treinamentos Ambulatoriais";
 
-        }
-
-        else if (
+        } else if (
           moduloSelecionado ===
           "Hospitalar"
         ) {
@@ -1311,17 +1328,13 @@ navLinks.forEach(
           tituloCatalogo.textContent =
             "Treinamentos Hospitalares";
 
-        }
-
-        else {
+        } else {
 
           tituloCatalogo.textContent =
             "Treinamentos";
 
         }
 
-
-        // Destaque visual
 
         navLinks.forEach(
           item => {
@@ -1339,9 +1352,6 @@ navLinks.forEach(
         );
 
 
-        // Limpa categoria
-        // e subcategoria
-
         categoriaSelecionada =
           "";
 
@@ -1349,23 +1359,14 @@ navLinks.forEach(
           "";
 
 
-        categoriaSelecionadaTexto
-          .textContent =
+        categoriaSelecionadaTexto.textContent =
           "Todas as categorias";
 
-
-        subcategoriaSelecionadaTexto
-          .textContent =
+        subcategoriaSelecionadaTexto.textContent =
           "Todas as subcategorias";
 
 
-        // Reconstrói filtros
-        // conforme o módulo
-
         preencherFiltroCategorias();
-
-
-        // Atualiza vídeos
 
         atualizarCatalogo();
 
@@ -1384,66 +1385,345 @@ btnLimparFiltros.addEventListener(
   "click",
   () => {
 
-    // Pesquisa
-
     campoPesquisa.value =
       "";
 
 
-    // Categoria
-
     categoriaSelecionada =
       "";
 
-
-    categoriaSelecionadaTexto
-      .textContent =
+    categoriaSelecionadaTexto.textContent =
       "Todas as categorias";
 
-
-    // Subcategoria
 
     subcategoriaSelecionada =
       "";
 
-
-    subcategoriaSelecionadaTexto
-      .textContent =
+    subcategoriaSelecionadaTexto.textContent =
       "Todas as subcategorias";
 
 
-    // Fecha dropdowns
+    selectCategoria.classList.remove(
+      "aberto"
+    );
 
-    selectCategoria
-      .classList.remove(
-        "aberto"
-      );
+    selectSubcategoria.classList.remove(
+      "aberto"
+    );
 
-    selectSubcategoria
-      .classList.remove(
-        "aberto"
-      );
-
-
-    // Reconstrói filtros
 
     preencherFiltroCategorias();
 
 
-    // Fecha sugestões
-
     sugestoesPesquisa.innerHTML =
       "";
 
-    sugestoesPesquisa
-      .classList.remove(
-        "ativo"
+    sugestoesPesquisa.classList.remove(
+      "ativo"
+    );
+
+
+    atualizarCatalogo();
+
+  }
+);
+
+
+// ========================================
+// CARROSSEL DE VÍDEOS
+// ========================================
+
+function adicionarSetasCarrossel() {
+
+  const listas =
+    document.querySelectorAll(
+      ".video-row"
+    );
+
+
+  listas.forEach(
+    lista => {
+
+      if (
+        lista.parentElement.classList.contains(
+          "carrossel-wrapper"
+        )
+      ) {
+
+        atualizarSetas(
+          lista
+        );
+
+        return;
+
+      }
+
+
+      const wrapper =
+        document.createElement(
+          "div"
+        );
+
+
+      wrapper.classList.add(
+        "carrossel-wrapper"
       );
 
 
-    // Atualiza catálogo
+      lista.parentNode.insertBefore(
+        wrapper,
+        lista
+      );
 
-    atualizarCatalogo();
+
+      wrapper.appendChild(
+        lista
+      );
+
+
+      // ========================================
+      // SETA ESQUERDA
+      // ========================================
+
+      const btnEsquerda =
+        document.createElement(
+          "button"
+        );
+
+
+      btnEsquerda.type =
+        "button";
+
+
+      btnEsquerda.classList.add(
+        "carrossel-seta",
+        "carrossel-esquerda"
+      );
+
+
+      btnEsquerda.innerHTML =
+        "‹";
+
+
+      btnEsquerda.setAttribute(
+        "aria-label",
+        "Ver vídeos anteriores"
+      );
+
+
+      // ========================================
+      // SETA DIREITA
+      // ========================================
+
+      const btnDireita =
+        document.createElement(
+          "button"
+        );
+
+
+      btnDireita.type =
+        "button";
+
+
+      btnDireita.classList.add(
+        "carrossel-seta",
+        "carrossel-direita"
+      );
+
+
+      btnDireita.innerHTML =
+        "›";
+
+
+      btnDireita.setAttribute(
+        "aria-label",
+        "Ver próximos vídeos"
+      );
+
+
+      wrapper.appendChild(
+        btnEsquerda
+      );
+
+
+      wrapper.appendChild(
+        btnDireita
+      );
+
+
+      // ========================================
+      // DISTÂNCIA DE ROLAGEM
+      // ========================================
+
+      function distanciaRolagem() {
+
+        return Math.max(
+          lista.clientWidth * 0.8,
+          300
+        );
+
+      }
+
+
+      // ========================================
+      // CLIQUE ESQUERDA
+      // ========================================
+
+      btnEsquerda.addEventListener(
+        "click",
+        () => {
+
+          lista.scrollBy({
+            left:
+              -distanciaRolagem(),
+
+            behavior:
+              "smooth"
+          });
+
+        }
+      );
+
+
+      // ========================================
+      // CLIQUE DIREITA
+      // ========================================
+
+      btnDireita.addEventListener(
+        "click",
+        () => {
+
+          lista.scrollBy({
+            left:
+              distanciaRolagem(),
+
+            behavior:
+              "smooth"
+          });
+
+        }
+      );
+
+
+      lista.addEventListener(
+        "scroll",
+        () => {
+
+          atualizarSetas(
+            lista
+          );
+
+        }
+      );
+
+
+      atualizarSetas(
+        lista
+      );
+
+    }
+  );
+
+}
+
+
+// ========================================
+// ATUALIZAR SETAS DO CARROSSEL
+// ========================================
+
+function atualizarSetas(
+  lista
+) {
+
+  const wrapper =
+    lista.parentElement;
+
+
+  if (
+    !wrapper.classList.contains(
+      "carrossel-wrapper"
+    )
+  ) {
+
+    return;
+
+  }
+
+
+  const esquerda =
+    wrapper.querySelector(
+      ".carrossel-esquerda"
+    );
+
+
+  const direita =
+    wrapper.querySelector(
+      ".carrossel-direita"
+    );
+
+
+  if (
+    !esquerda ||
+    !direita
+  ) {
+
+    return;
+
+  }
+
+
+  const chegouInicio =
+    lista.scrollLeft <= 5;
+
+
+  const chegouFim =
+    lista.scrollLeft +
+      lista.clientWidth >=
+    lista.scrollWidth - 5;
+
+
+  const possuiRolagem =
+    lista.scrollWidth >
+    lista.clientWidth + 5;
+
+
+  esquerda.classList.toggle(
+    "oculta",
+    chegouInicio ||
+      !possuiRolagem
+  );
+
+
+  direita.classList.toggle(
+    "oculta",
+    chegouFim ||
+      !possuiRolagem
+  );
+
+}
+
+
+// ========================================
+// ATUALIZAR SETAS AO REDIMENSIONAR
+// ========================================
+
+window.addEventListener(
+  "resize",
+  () => {
+
+    document
+      .querySelectorAll(
+        ".video-row"
+      )
+      .forEach(
+        lista => {
+
+          atualizarSetas(
+            lista
+          );
+
+        }
+      );
 
   }
 );
