@@ -884,25 +884,35 @@ body {
    NAVBAR DO CATÁLOGO
 ======================================== */
 
+/* ========================================
+   NAVBAR DO CATÁLOGO
+======================================== */
+
 .catalogo-nav {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .nav-link {
-  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
+  border: none;
   background: transparent;
 
   color: rgba(255, 255, 255, 0.8);
 
   padding: 10px 14px;
-
   border-radius: 7px;
 
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
+
+  /* Remove o sublinhado dos links */
+  text-decoration: none;
 
   cursor: pointer;
 
@@ -911,35 +921,54 @@ body {
     color 0.2s;
 }
 
+
+/* HOVER */
+
 .nav-link:hover {
   background: rgba(255, 255, 255, 0.12);
-
   color: #ffffff;
+
+  text-decoration: none;
 }
+
+
+/* ITEM ATIVO */
 
 .nav-link.ativo {
   background: #ffffff;
-
   color: #379566;
+
+  text-decoration: none;
 }
 
-/* RESPONSIVO */
+
+/* GARANTE QUE LINKS NÃO FIQUEM SUBLINHADOS */
+
+a.nav-link,
+a.nav-link:visited,
+a.nav-link:hover,
+a.nav-link:focus,
+a.nav-link:active {
+  text-decoration: none;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
 
 @media (max-width: 850px) {
+
   .catalogo-header {
     flex-wrap: wrap;
-
     gap: 15px;
-
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
   .catalogo-nav {
     order: 3;
-
     width: 100%;
-
     overflow-x: auto;
   }
 
@@ -1665,4 +1694,481 @@ body {
 
 .video-row::-webkit-scrollbar {
     display: none;
+}
+
+/* ========================================
+   BASE DE CONHECIMENTO / MANUAL
+======================================== */
+
+.manual-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(280px, 1fr)
+    );
+    gap: 24px;
+    margin-top: 35px;
+    padding-bottom: 50px;
+}
+
+
+/* CARD */
+
+.manual-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow:
+        0 4px 18px
+        rgba(0, 0, 0, 0.08);
+
+    border:
+        1px solid
+        rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.manual-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+/* TÍTULO */
+
+.manual-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 22px;
+
+    color: #24313d;
+}
+
+
+/* DESCRIÇÃO */
+
+.manual-card p {
+    margin: 0 0 20px;
+
+    line-height: 1.5;
+
+    color: #606b74;
+
+    flex: 1;
+}
+
+
+/* BOTÃO */
+
+.manual-link {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 10px 18px;
+
+    background: #299866;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.manual-link:hover {
+    background: #217c54;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   CAMPO DE PESQUISA DO MANUAL
+======================================== */
+
+#campoPesquisaManual {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 18px;
+
+    border:
+        1px solid
+        #d5dadd;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: #25313b;
+
+    font-size: 16px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#campoPesquisaManual:focus {
+    border-color: #299866;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(41, 152, 102, 0.12);
+}
+
+
+#campoPesquisaManual::placeholder {
+    color: #8b949c;
+}
+
+
+/* ========================================
+   INTRODUÇÃO DO MANUAL
+======================================== */
+
+.manual-page .catalogo-intro {
+    margin-bottom: 0;
+}
+
+
+/* ========================================
+   RESPONSIVO
+======================================== */
+
+@media (max-width: 768px) {
+
+    .manual-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 25px;
+    }
+
+    .manual-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+}
+
+/* ========================================
+   MANUAL - LISTA DE ARTIGOS
+======================================== */
+
+.manual-lista-topo {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.manual-lista-topo h2 {
+    margin: 14px 0 0;
+    font-size: 28px;
+    color: #24313d;
+}
+
+
+/* BOTÃO VOLTAR */
+
+.btn-voltar-manual {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 9px 15px;
+
+    border: 1px solid #d7ddda;
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #299866;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.btn-voltar-manual:hover {
+    background: #f1f8f5;
+    border-color: #299866;
+    transform: translateX(-2px);
+}
+
+
+/* ========================================
+   CONTAINER DOS ARTIGOS
+======================================== */
+
+.manual-artigos {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(350px, 1fr)
+    );
+
+    gap: 18px;
+
+    width: 100%;
+}
+
+
+/* ========================================
+   CARD DO ARTIGO
+======================================== */
+
+.manual-artigo-card {
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+
+    padding: 22px;
+
+    min-height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    box-shadow:
+        0 4px 16px
+        rgba(0, 0, 0, 0.07);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.manual-artigo-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 24px
+        rgba(0, 0, 0, 0.11);
+}
+
+
+/* CATEGORIA */
+
+.manual-artigo-categoria {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #299866;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+
+/* TÍTULO */
+
+.manual-artigo-card h3 {
+    margin: 0 0 10px;
+
+    color: #24313d;
+
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+
+/* DESCRIÇÃO */
+
+.manual-artigo-card p {
+    margin: 0;
+
+    color: #66727c;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   LINK LER ARTIGO
+======================================== */
+
+.manual-artigo-link {
+    display: inline-flex;
+
+    width: fit-content;
+
+    margin-top: 20px;
+
+    padding: 9px 16px;
+
+    border-radius: 8px;
+
+    background: #299866;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.manual-artigo-link:hover {
+    background: #217c54;
+    transform: translateX(2px);
+}
+
+
+/* ========================================
+   CONTEÚDO AINDA SEM LINK
+======================================== */
+
+.manual-artigo-indisponivel {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 20px;
+
+    padding: 8px 13px;
+
+    border-radius: 7px;
+
+    background: #f0f2f3;
+
+    color: #7b858d;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   NENHUM RESULTADO
+======================================== */
+
+.manual-vazio {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 4px 16px
+        rgba(0, 0, 0, 0.06);
+}
+
+.manual-vazio h2 {
+    margin: 0 0 8px;
+
+    color: #24313d;
+}
+
+.manual-vazio p {
+    margin: 0;
+
+    color: #69747c;
+}
+
+
+/* ========================================
+   RESPONSIVO - MANUAL
+======================================== */
+
+@media (max-width: 768px) {
+
+    .manual-artigos {
+        grid-template-columns: 1fr;
+    }
+
+    .manual-lista-topo h2 {
+        font-size: 24px;
+    }
+
+    .manual-artigo-card {
+        min-height: auto;
+        padding: 19px;
+    }
+
+}
+
+/* ========================================
+   MANUAL - SUBCATEGORIAS
+======================================== */
+
+.manual-lista-descricao {
+    margin: 8px 0 0;
+    color: #6b757d;
+    font-size: 15px;
+}
+
+.manual-breadcrumb {
+    margin-top: 20px;
+    color: #7b858d;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.manual-breadcrumb span {
+    margin: 0 7px;
+    color: #299866;
+}
+
+.manual-contagem-subcategorias {
+    display: inline-block;
+    margin-top: 5px;
+    color: #299866;
+    font-size: 13px;
+    font-weight: 600;
 }

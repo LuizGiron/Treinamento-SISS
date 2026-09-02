@@ -1,0 +1,1226 @@
+[
+  {
+    "id": 1,
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Configuração de Agenda",
+    "titulo": "Criando uma grade de agenda",
+    "descricao": "Orientações sobre criando uma grade de agenda.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-agenda/criando-uma-grade-de-agenda"
+  },
+  {
+    "id": 2,
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Impedimentos",
+    "titulo": "Criando impedimentos de agenda",
+    "descricao": "Orientações sobre criando impedimentos de agenda.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-agenda/criando-impedimentos-de-agenda-201907160217"
+  },
+  {
+    "id": 3,
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Publicação",
+    "titulo": "Publicando Agenda",
+    "descricao": "Orientações sobre publicando agenda.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-agenda/publicando-agenda-201907160218"
+  },
+  {
+    "id": 4,
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Manutenção",
+    "titulo": "Realizando a manutenção de grades de agenda",
+    "descricao": "Orientações sobre realizando a manutenção de grades de agenda.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-agenda/manutencao-de-agenda-201907160218"
+  },
+  {
+    "id": 5,
+    "modulo": "Ambulatorial",
+    "categoria": "Agenda",
+    "subcategoria": "Impedimentos",
+    "titulo": "Criando Impedimento: Ajuste de grade de horário",
+    "descricao": "Orientações sobre criando impedimento: ajuste de grade de horário.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-agenda/criando-impedimento-ajuste-de-grade-de-horario"
+  },
+  {
+    "id": 6,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Entrada",
+    "titulo": "Pesquisa de Entrada de Material/Medicamento",
+    "descricao": "Orientações sobre pesquisa de entrada de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/pesquisa-de-entrada-de-material-medicamento"
+  },
+  {
+    "id": 7,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Entrada",
+    "titulo": "Registrar uma Entrada de Material/Medicamento",
+    "descricao": "Orientações sobre registrar uma entrada de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/entrada-de-materiais"
+  },
+  {
+    "id": 8,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Saída",
+    "titulo": "Pesquisa de Saída de Material/Medicamento",
+    "descricao": "Orientações sobre pesquisa de saída de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/pesquisa-de-saida-de-material-medicamento"
+  },
+  {
+    "id": 9,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Saída",
+    "titulo": "Registrar uma Saída de Material/Medicamento",
+    "descricao": "Orientações sobre registrar uma saída de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/saida-de-material"
+  },
+  {
+    "id": 10,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Solicitação",
+    "titulo": "Pesquisa de Solicitação de Materiais/Medicamentos",
+    "descricao": "Orientações sobre pesquisa de solicitação de materiais/medicamentos.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/pesquisar-solicitacao-de-materiais-medicamentos"
+  },
+  {
+    "id": 11,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Solicitação",
+    "titulo": "Registrar uma solicitação de Material/Medicamento",
+    "descricao": "Orientações sobre registrar uma solicitação de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/registrar-uma-solicitacao-de-material-medicamento"
+  },
+  {
+    "id": 12,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Inventário",
+    "titulo": "Pesquisa de Inventario de Material/Medicamento",
+    "descricao": "Orientações sobre pesquisa de inventario de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/pesquisa-de-inventario-de-material-medicamento"
+  },
+  {
+    "id": 13,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Inventário",
+    "titulo": "Registrar um Inventário de Material/Medicamento",
+    "descricao": "Orientações sobre registrar um inventário de material/medicamento.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/inventario"
+  },
+  {
+    "id": 14,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Dispensação",
+    "titulo": "Pesquisa de dispensas no modulo lançamento de dispensações",
+    "descricao": "Orientações sobre pesquisa de dispensas no modulo lançamento de dispensações.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/pesquisa-de-dispensas-no-modulo-lancamento-de-dispensacoes"
+  },
+  {
+    "id": 15,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Receitas",
+    "titulo": "Imprimindo 2° via de Receitas através do módulo Recepção",
+    "descricao": "Orientações sobre imprimindo 2° via de receitas através do módulo recepção.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/validando-receitas-atraves-do-modulo-recepcao"
+  },
+  {
+    "id": 16,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Cadastro",
+    "titulo": "Cadastro de Material - Definição dos Campos",
+    "descricao": "Orientações sobre cadastro de material - definição dos campos.",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/cadastro-de-material-definicao-dos-campos"
+  },
+  {
+    "id": 17,
+    "modulo": "Ambulatorial",
+    "categoria": "Farmácia",
+    "subcategoria": "Dispensação",
+    "titulo": "Dispensação de Medicamentos (Rede Municipal)",
+    "descricao": "Orientações sobre dispensação de medicamentos (rede municipal).",
+    "url": "https://sissonline.tomticket.com/kb/farmacia/dispensacao-de-medicamentos-rede-municipal"
+  },
+  {
+    "id": 18,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Produção",
+    "titulo": "Atendimento em Lote",
+    "descricao": "Orientações sobre atendimento em lote.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/atendimento-em-lote"
+  },
+  {
+    "id": 19,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Inconsistências",
+    "titulo": "Corrigindo inconsistências BPA-I",
+    "descricao": "Orientações sobre corrigindo inconsistências bpa-i.",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/corrigindo-inconsistencias-bpa-i"
+  },
+  {
+    "id": 20,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Correções",
+    "titulo": "Excluir atendimento/admissão feitos por engano",
+    "descricao": "Orientações sobre excluir atendimento/admissão feitos por engano.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/excluir-atendimento-admissao-feitos-por-engano"
+  },
+  {
+    "id": 21,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Exportação",
+    "titulo": "Exportando produção.",
+    "descricao": "Orientações sobre exportando produção..",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/exportando-producao-"
+  },
+  {
+    "id": 22,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Inconsistências",
+    "titulo": "Imprimindo o Relatório de Inconsistências",
+    "descricao": "Orientações sobre imprimindo o relatório de inconsistências.",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/imprimindo-o-relatorio-de-inconsistencias"
+  },
+  {
+    "id": 23,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Produção",
+    "titulo": "Lançamento em Lote",
+    "descricao": "Orientações sobre lançamento em lote.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/lancamento-em-lote"
+  },
+  {
+    "id": 24,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Produção",
+    "titulo": "Lançando produção para pacientes Admitidos",
+    "descricao": "Orientações sobre lançando produção para pacientes admitidos.",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/lancando-producao-para-pacientes-admitidos"
+  },
+  {
+    "id": 25,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Produção",
+    "titulo": "Lançando produção para pacientes sem admissão.",
+    "descricao": "Orientações sobre lançando produção para pacientes sem admissão..",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/lancando-producao-para-pacientes-sem-admissao-"
+  },
+  {
+    "id": 26,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Faturamento",
+    "titulo": "Painel Faturamento",
+    "descricao": "Orientações sobre painel faturamento.",
+    "url": "https://sissonline.tomticket.com/kb/faturamento-bpa/painel-faturamento"
+  },
+  {
+    "id": 27,
+    "modulo": "Ambulatorial",
+    "categoria": "Faturamento BPA",
+    "subcategoria": "Produção",
+    "titulo": "Pós-Atendimento",
+    "descricao": "Orientações sobre pós-atendimento.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/pos-atendimento"
+  },
+  {
+    "id": 28,
+    "modulo": "Ambulatorial",
+    "categoria": "Imunização",
+    "subcategoria": "Aplicação",
+    "titulo": "Aplicar Vacina - Carteira de Vacinação",
+    "descricao": "Orientações sobre aplicar vacina - carteira de vacinação.",
+    "url": "https://sissonline.tomticket.com/kb/imunizacao/aplicar-vacina-carteira-de-vacinacao"
+  },
+  {
+    "id": 29,
+    "modulo": "Ambulatorial",
+    "categoria": "Imunização",
+    "subcategoria": "Aplicação",
+    "titulo": "Aplicar Vacina - Campanha",
+    "descricao": "Orientações sobre aplicar vacina - campanha.",
+    "url": "https://sissonline.tomticket.com/kb/imunizacao/aplicar-vacina-campanha"
+  },
+  {
+    "id": 30,
+    "modulo": "Ambulatorial",
+    "categoria": "Imunização",
+    "subcategoria": "Aplicação",
+    "titulo": "Aplicar vacina - Rotina",
+    "descricao": "Orientações sobre aplicar vacina - rotina.",
+    "url": "https://sissonline.tomticket.com/kb/imunizacao/aplicar-vacina-rotina"
+  },
+  {
+    "id": 31,
+    "modulo": "Ambulatorial",
+    "categoria": "Imunização",
+    "subcategoria": "Configuração",
+    "titulo": "Configuração Módulo Imunização",
+    "descricao": "Orientações sobre configuração módulo imunização.",
+    "url": "https://sissonline.tomticket.com/kb/imunizacao/configuracao-modulo-imunizacao"
+  },
+  {
+    "id": 32,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Atendimento",
+    "titulo": "Atender Pacientes na Sala de Espera",
+    "descricao": "Orientações sobre atender pacientes na sala de espera.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/sala-de-espera"
+  },
+  {
+    "id": 33,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Anamnese",
+    "titulo": "Preenchendo a Ficha de Anamnese",
+    "descricao": "Orientações sobre preenchendo a ficha de anamnese.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/zpreenchendo-a-ficha-de-anamnese"
+  },
+  {
+    "id": 34,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Tratamento",
+    "titulo": "Preenchendo o Estado Inicial",
+    "descricao": "Orientações sobre preenchendo o estado inicial.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/preenchendo-o-estado-inicial"
+  },
+  {
+    "id": 35,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Tratamento",
+    "titulo": "Odontograma",
+    "descricao": "Orientações sobre odontograma.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/odontograma"
+  },
+  {
+    "id": 36,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Tratamento",
+    "titulo": "Regiões",
+    "descricao": "Orientações sobre regiões.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/regioes"
+  },
+  {
+    "id": 37,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Tratamento",
+    "titulo": "Plano",
+    "descricao": "Orientações sobre plano.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/plano"
+  },
+  {
+    "id": 38,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Atendimento",
+    "titulo": "Salvando o Atendimento",
+    "descricao": "Orientações sobre salvando o atendimento.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/salvando-o-atendimento"
+  },
+  {
+    "id": 39,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Tratamento",
+    "titulo": "Tratamento Completado",
+    "descricao": "Orientações sobre tratamento completado.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/tratamento-completado"
+  },
+  {
+    "id": 40,
+    "modulo": "Ambulatorial",
+    "categoria": "Odontologia",
+    "subcategoria": "Atendimento",
+    "titulo": "Cancelar Atendimento",
+    "descricao": "Orientações sobre cancelar atendimento.",
+    "url": "https://sissonline.tomticket.com/kb/odontologia/cancelar-atendimento"
+  },
+  {
+    "id": 41,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Atendimento",
+    "titulo": "Atender um paciente que não foi admitido",
+    "descricao": "Orientações sobre atender um paciente que não foi admitido.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/atender-um-paciente-que-nao-foi-admitido"
+  },
+  {
+    "id": 42,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Fila de Espera",
+    "titulo": "Filtros / Fila de Espera PEP",
+    "descricao": "Orientações sobre filtros / fila de espera pep.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/filtros-fila-de-espera-pep"
+  },
+  {
+    "id": 43,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Fluxos",
+    "titulo": "Fluxo CPAN - Linha de Cuidado Sobrepeso e Obesidade - Piracicaba",
+    "descricao": "Orientações sobre fluxo cpan - linha de cuidado sobrepeso e obesidade - piracicaba.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/fluxo-cpan-linha-de-cuidado-sobrepeso-e-obesidade-piracicaba"
+  },
+  {
+    "id": 44,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Formulários",
+    "titulo": "Impressão de Formulários para atendimentos concluídos",
+    "descricao": "Orientações sobre impressão de formulários para atendimentos concluídos.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/impressao-de-formularios-para-atendimentos-concluidos"
+  },
+  {
+    "id": 45,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Painel de Chamadas",
+    "titulo": "Minhas chamadas indicam a sala errada no Painel",
+    "descricao": "Orientações sobre minhas chamadas indicam a sala errada no painel.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/minhas-chamadas-indicam-a-sala-errada-no-painel"
+  },
+  {
+    "id": 46,
+    "modulo": "Ambulatorial",
+    "categoria": "Prontuario Eletrônico",
+    "subcategoria": "Atendimento",
+    "titulo": "Saída de pacientes",
+    "descricao": "Orientações sobre saída de pacientes.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico-202003200312/saida-de-pacientes"
+  },
+  {
+    "id": 47,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Atendimento por senha",
+    "titulo": "Atendendo pacientes por senha (Totem)",
+    "descricao": "Orientações sobre atendendo pacientes por senha (totem).",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/atendendo-pacientes-por-senha-totem-201907160219"
+  },
+  {
+    "id": 48,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Paciente",
+    "titulo": "Pesquisando um paciente",
+    "descricao": "Orientações sobre pesquisando um paciente.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/pesquisando-um-paciente-201907160220"
+  },
+  {
+    "id": 49,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Paciente",
+    "titulo": "Cadastrando ou alterando dados do paciente",
+    "descricao": "Orientações sobre cadastrando ou alterando dados do paciente.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/cadastrando-ou-alterando-dados-do-paciente-201907160225"
+  },
+  {
+    "id": 50,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Agendando primeira consulta",
+    "descricao": "Orientações sobre agendando primeira consulta.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/agendando-primeira-consulta"
+  },
+  {
+    "id": 51,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Agendando retorno",
+    "descricao": "Orientações sobre agendando retorno.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/agendando-retorno"
+  },
+  {
+    "id": 52,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Agendando encaixe",
+    "descricao": "Orientações sobre agendando encaixe.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/agendando-encaixe-201907160221"
+  },
+  {
+    "id": 53,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Consultando agendamento de um paciente",
+    "descricao": "Orientações sobre consultando agendamento de um paciente.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/consultando-agendamento-de-um-paciente-201907160222"
+  },
+  {
+    "id": 54,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Cancelando agendamento",
+    "descricao": "Orientações sobre cancelando agendamento.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/cancelando-agendamento-201907160227"
+  },
+  {
+    "id": 55,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Remarcando agendamento",
+    "descricao": "Orientações sobre remarcando agendamento.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/remarcando-agendamento-201907160227"
+  },
+  {
+    "id": 56,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Agendamento",
+    "titulo": "Reimprimindo comprovante de agendamento",
+    "descricao": "Orientações sobre reimprimindo comprovante de agendamento.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/reimprimindo-comprovante-de-agendamento-201907160223"
+  },
+  {
+    "id": 57,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Admissão",
+    "titulo": "Admitindo paciente agendado",
+    "descricao": "Orientações sobre admitindo paciente agendado.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/admitindo-paciente-agendado-201907160155"
+  },
+  {
+    "id": 58,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Admissão",
+    "titulo": "Admitindo paciente NÃO agendado",
+    "descricao": "Orientações sobre admitindo paciente não agendado.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/admitindo-paciente-nao-agendado-201907160158"
+  },
+  {
+    "id": 59,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Admissão",
+    "titulo": "Reimprimindo formulários de admissão",
+    "descricao": "Orientações sobre reimprimindo formulários de admissão.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/reimprimindo-formularios-de-admissao-201907160223"
+  },
+  {
+    "id": 60,
+    "modulo": "Ambulatorial",
+    "categoria": "Recepção",
+    "subcategoria": "Paciente",
+    "titulo": "Visualizando histórico de atendimentos",
+    "descricao": "Orientações sobre visualizando histórico de atendimentos.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-recepcao/visualizando-historico-de-atendimentos-201907160224"
+  },
+  {
+    "id": 61,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Apoio",
+    "titulo": "Acessando o Mapa de Ofertas",
+    "descricao": "Orientações sobre acessando o mapa de ofertas.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/acessando-o-mapa-de-ofertas"
+  },
+  {
+    "id": 62,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Situações da Guia",
+    "titulo": "Entendendo as situações da guia no sistema",
+    "descricao": "Orientações sobre entendendo as situações da guia no sistema.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/dicionario-de-conceitos"
+  },
+  {
+    "id": 63,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Fila de Espera",
+    "titulo": "Incluindo guia na fila de espera",
+    "descricao": "Orientações sobre incluindo guia na fila de espera.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/incluindo-guia-na-fila-de-espera"
+  },
+  {
+    "id": 64,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Relatórios",
+    "titulo": "Relatório de Solicitações retiradas da Fila de Espera (AG0016)",
+    "descricao": "Orientações sobre relatório de solicitações retiradas da fila de espera (ag0016).",
+    "url": "https://sissonline.tomticket.com/kb/regulacao-201907150232/acessando-o-relatorio-de-guias-agendadas-em-outros-sistemas"
+  },
+  {
+    "id": 65,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Regulação Médica",
+    "titulo": "Médico regulador",
+    "descricao": "Orientações sobre médico regulador.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/medico-regulador"
+  },
+  {
+    "id": 66,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Fila de Espera",
+    "titulo": "Gerenciando fila de espera - Regulação",
+    "descricao": "Orientações sobre gerenciando fila de espera - regulação.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/gerenciando-fila-de-espera"
+  },
+  {
+    "id": 67,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Agendamento",
+    "titulo": "Agendando uma solicitação",
+    "descricao": "Orientações sobre agendando uma solicitação.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/agendando-uma-solicitacao"
+  },
+  {
+    "id": 68,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Acompanhamento",
+    "titulo": "Acompanhamento regulação",
+    "descricao": "Orientações sobre acompanhamento regulação.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/acompanhando-regulacao-201907160230"
+  },
+  {
+    "id": 69,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Relatórios",
+    "titulo": "Relatório de agendamento da fila de espera (AG0012)",
+    "descricao": "Orientações sobre relatório de agendamento da fila de espera (ag0012).",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/relatorio-de-agendamento-da-fila-de-espera-ag-0028"
+  },
+  {
+    "id": 70,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Comprovantes",
+    "titulo": "Imprimindo comprovante de agendamento do paciente",
+    "descricao": "Orientações sobre imprimindo comprovante de agendamento do paciente.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-regulacao/imprimindo-comprovante-201907160232"
+  },
+  {
+    "id": 71,
+    "modulo": "Ambulatorial",
+    "categoria": "Regulação",
+    "subcategoria": "Fila de Espera",
+    "titulo": "Alterar prioridade de uma Guia ou acrescentar observações.",
+    "descricao": "Orientações sobre alterar prioridade de uma guia ou acrescentar observações..",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/alterar-prioridade-de-uma-guia-ou-acrescentar-observacoes-"
+  },
+  {
+    "id": 72,
+    "modulo": "Ambulatorial",
+    "categoria": "Relatórios",
+    "subcategoria": "Agenda",
+    "titulo": "Imprimindo agenda por profissional",
+    "descricao": "Orientações sobre imprimindo agenda por profissional.",
+    "url": "https://sissonline.tomticket.com/kb/modulo-relatorios/imprimindo-agenda-por-profissional-201907160233"
+  },
+  {
+    "id": 73,
+    "modulo": "Ambulatorial",
+    "categoria": "SAMU",
+    "subcategoria": "Central de Regulação",
+    "titulo": "Atendimento Radiofonista - SAMU",
+    "descricao": "Orientações sobre atendimento radiofonista - samu.",
+    "url": "https://sissonline.tomticket.com/kb/samu/atendimento-radiofonista-samu"
+  },
+  {
+    "id": 74,
+    "modulo": "Ambulatorial",
+    "categoria": "SAMU",
+    "subcategoria": "Central de Regulação",
+    "titulo": "Atendimento Telefonista - SAMU",
+    "descricao": "Orientações sobre atendimento telefonista - samu.",
+    "url": "https://sissonline.tomticket.com/kb/samu/admissao-de-paciente-samu"
+  },
+  {
+    "id": 75,
+    "modulo": "Ambulatorial",
+    "categoria": "SAMU",
+    "subcategoria": "Central de Regulação",
+    "titulo": "Atendimento de Regulador - SAMU",
+    "descricao": "Orientações sobre atendimento de regulador - samu.",
+    "url": "https://sissonline.tomticket.com/kb/samu/atendimento-de-regulador-samu"
+  },
+  {
+    "id": 76,
+    "modulo": "Ambulatorial",
+    "categoria": "Telemedicina",
+    "subcategoria": "Triagem",
+    "titulo": "Telemedicina/ Triagem",
+    "descricao": "Orientações sobre telemedicina/ triagem.",
+    "url": "https://sissonline.tomticket.com/kb/telemedicina/telemedicina-triagem"
+  },
+  {
+    "id": 77,
+    "modulo": "Ambulatorial",
+    "categoria": "Totem / Painel de chamadas",
+    "subcategoria": "Painel de Chamadas",
+    "titulo": "Iniciando Painel de Chamadas",
+    "descricao": "Orientações sobre iniciando painel de chamadas.",
+    "url": "https://sissonline.tomticket.com/kb/totem-painel-de-chamadas/iniciando-painel-de-chamadas"
+  },
+  {
+    "id": 78,
+    "modulo": "Ambulatorial",
+    "categoria": "Totem / Painel de chamadas",
+    "subcategoria": "Totem",
+    "titulo": "Iniciando o Totem",
+    "descricao": "Orientações sobre iniciando o totem.",
+    "url": "https://sissonline.tomticket.com/kb/totem-painel-de-chamadas/iniciando-o-totem"
+  },
+  {
+    "id": 79,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Fluxos",
+    "titulo": "FLUXO PARA NOVOS CADASTROS - PMSA",
+    "descricao": "Orientações do SISS para fluxo para novos cadastros - pmsa.",
+    "url": "https://sissonline.tomticket.com/kb/agente-comunitario-de-saude/fluxo-para-novos-cadastros-pmsa"
+  },
+  {
+    "id": 80,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Cadastros",
+    "titulo": "Unificação de Cadastros",
+    "descricao": "Orientações do SISS para unificação de cadastros.",
+    "url": "https://sissonline.tomticket.com/kb/agente-comunitario-de-saude/unificacao-de-cadastros"
+  },
+  {
+    "id": 81,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Cadastros",
+    "titulo": "Atualizando o Usuário da Saúde",
+    "descricao": "Orientações do SISS para atualizando o usuário da saúde.",
+    "url": "https://sissonline.tomticket.com/kb/agente-comunitario-de-saude/atualizando-o-usuario-da-saude"
+  },
+  {
+    "id": 82,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Cadastros",
+    "titulo": "Ficha de Cadastro Individual",
+    "descricao": "Orientações do SISS para ficha de cadastro individual.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/cadastro-individual"
+  },
+  {
+    "id": 83,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Cadastros",
+    "titulo": "Ficha de Cadastro Domiciliar e Territorial",
+    "descricao": "Orientações do SISS para ficha de cadastro domiciliar e territorial.",
+    "url": "https://sissonline.tomticket.com/kb/agente-comunitario-de-saude/ficha-de-cadastro-domiciliar-e-territorial"
+  },
+  {
+    "id": 84,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Visitas",
+    "titulo": "Ficha de Visita Domiciliar",
+    "descricao": "Orientações do SISS para ficha de visita domiciliar.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-de-visita-domiciliar"
+  },
+  {
+    "id": 85,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Procedimentos",
+    "titulo": "Ficha de Procedimento Consolidado",
+    "descricao": "Orientações do SISS para ficha de procedimento consolidado.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-de-procedimento-consolidado"
+  },
+  {
+    "id": 86,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Cadastros",
+    "titulo": "Cadastro Domiciliar e Territorial",
+    "descricao": "Orientações do SISS para cadastro domiciliar e territorial.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/cadastro-domiciliar-e-territorial"
+  },
+  {
+    "id": 87,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Atividades",
+    "titulo": "Ficha de Atividade Coletiva",
+    "descricao": "Orientações do SISS para ficha de atividade coletiva.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-atividade-coletiva"
+  },
+  {
+    "id": 88,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Alimentação",
+    "titulo": "Ficha Marcadores de Consumo Alimentar",
+    "descricao": "Orientações do SISS para ficha marcadores de consumo alimentar.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-marcadores-de-consumo-alimentar"
+  },
+  {
+    "id": 89,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Atendimentos",
+    "titulo": "Ficha de Atendimento Individual",
+    "descricao": "Orientações do SISS para ficha de atendimento individual.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-de-atendimento-individual"
+  },
+  {
+    "id": 90,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Atendimentos",
+    "titulo": "Ficha de Atendimento Odontológico",
+    "descricao": "Orientações do SISS para ficha de atendimento odontológico.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-de-atendimento-odontologico"
+  },
+  {
+    "id": 91,
+    "modulo": "Fichas E-SUS",
+    "categoria": "Agente Comunitário de Saúde",
+    "subcategoria": "Condições Específicas",
+    "titulo": "Ficha Síndrome Neurológica por Zika/Microcefalia",
+    "descricao": "Orientações do SISS para ficha síndrome neurológica por zika/microcefalia.",
+    "url": "https://sissonline.tomticket.com/kb/fichas-e-sus/ficha-sindrome-neurologica-por-zika-microcefalia"
+  },
+  {
+    "id": 92,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Totem",
+    "titulo": "Atendendo senha do totem",
+    "descricao": "Orientações do módulo hospitalar para atendendo senha do totem.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/atendendo-senha-do-totem-201907160235"
+  },
+  {
+    "id": 93,
+    "modulo": "Hospitalar",
+    "categoria": "Prontuário Eletrônico",
+    "subcategoria": "Painel eletrônico",
+    "titulo": "Chamando pacientes no painel eletrônico",
+    "descricao": "Orientações do módulo hospitalar para chamando pacientes no painel eletrônico.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico/chamando-pacientes-no-painel-eletronico"
+  },
+  {
+    "id": 94,
+    "modulo": "Hospitalar",
+    "categoria": "Totem / Painel de chamadas",
+    "subcategoria": "Totem",
+    "titulo": "Iniciando o totem",
+    "descricao": "Orientações do módulo hospitalar para iniciando o totem.",
+    "url": "https://sissonline.tomticket.com/kb/iniciando-totem/iniciando-o-totem-201907160243"
+  },
+  {
+    "id": 95,
+    "modulo": "Hospitalar",
+    "categoria": "Triagem / Classificação de Risco",
+    "subcategoria": "Triagem",
+    "titulo": "Triando Paciente",
+    "descricao": "Orientações do módulo hospitalar para triando paciente.",
+    "url": "https://sissonline.tomticket.com/kb/triagem-classificacao-de-risco/triando-paciente-201907160247"
+  },
+  {
+    "id": 96,
+    "modulo": "Hospitalar",
+    "categoria": "Prontuário Eletrônico",
+    "subcategoria": "Atendimento médico",
+    "titulo": "Atendendo paciente através do painel eletrônico - Médicos",
+    "descricao": "Orientações do módulo hospitalar para atendendo paciente através do painel eletrônico - médicos.",
+    "url": "https://sissonline.tomticket.com/kb/prontuario-eletronico/atendendo-paciente-atraves-do-painel-eletronico-medicos"
+  },
+  {
+    "id": 97,
+    "modulo": "Hospitalar",
+    "categoria": "Totem / Painel de chamadas",
+    "subcategoria": "Painel eletrônico",
+    "titulo": "Iniciando o painel eletrônico",
+    "descricao": "Orientações do módulo hospitalar para iniciando o painel eletrônico.",
+    "url": "https://sissonline.tomticket.com/kb/iniciando-totem/iniciando-o-painel-eletronico-201907160244"
+  },
+  {
+    "id": 98,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Paciente",
+    "titulo": "Pesquisando um paciente",
+    "descricao": "Orientações do módulo hospitalar para pesquisando um paciente.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/pesquisando-um-paciente"
+  },
+  {
+    "id": 99,
+    "modulo": "Hospitalar",
+    "categoria": "Triagem / Classificação de Risco",
+    "subcategoria": "Triagem",
+    "titulo": "Reclassificação de Risco",
+    "descricao": "Orientações do módulo hospitalar para reclassificação de risco.",
+    "url": "https://sissonline.tomticket.com/kb/triagem-classificacao-de-risco/reclassificacao-de-risco-201907160248"
+  },
+  {
+    "id": 100,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Admissão",
+    "titulo": "Admitindo um paciente",
+    "descricao": "Orientações do módulo hospitalar para admitindo um paciente.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/admitindo-um-paciente-201907160237"
+  },
+  {
+    "id": 101,
+    "modulo": "Hospitalar",
+    "categoria": "Triagem / Classificação de Risco",
+    "subcategoria": "Impressão",
+    "titulo": "Reimprimindo ficha de atendimento - FAA",
+    "descricao": "Orientações do módulo hospitalar para reimprimindo ficha de atendimento - faa.",
+    "url": "https://sissonline.tomticket.com/kb/triagem-classificacao-de-risco/reimprimindo-ficha-de-atendimento-faa-201907160249"
+  },
+  {
+    "id": 102,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Atendimento",
+    "titulo": "Listar pacientes em atendimento (Por unidade)",
+    "descricao": "Orientações do módulo hospitalar para listar pacientes em atendimento (por unidade).",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/listar-pacientes-em-atendimento-por-unidade-201907160238"
+  },
+  {
+    "id": 103,
+    "modulo": "Hospitalar",
+    "categoria": "Triagem / Classificação de Risco",
+    "subcategoria": "Sala de Espera",
+    "titulo": "Sala de Espera",
+    "descricao": "Orientações do módulo hospitalar para sala de espera.",
+    "url": "https://sissonline.tomticket.com/kb/triagem-classificacao-de-risco/sala-de-espera-201907160249"
+  },
+  {
+    "id": 104,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Atendimento",
+    "titulo": "Cancelando um atendimento",
+    "descricao": "Orientações do módulo hospitalar para cancelando um atendimento.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/cancelando-um-atendimento-201907160238"
+  },
+  {
+    "id": 105,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Atendimento",
+    "titulo": "Atualizando dados do atendimento",
+    "descricao": "Orientações do módulo hospitalar para atualizando dados do atendimento.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/atualizando-dados-do-atendimento-201907160239"
+  },
+  {
+    "id": 106,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Impressão",
+    "titulo": "Imprimindo relatórios do paciente",
+    "descricao": "Orientações do módulo hospitalar para imprimindo relatórios do paciente.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/imprimindo-relatorios-do-paciente"
+  },
+  {
+    "id": 107,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Dispensa",
+    "titulo": "Dispensando um paciente",
+    "descricao": "Orientações do módulo hospitalar para dispensando um paciente.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/dispensando-um-paciente-201907160241"
+  },
+  {
+    "id": 108,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Consulta",
+    "titulo": "Pesquisando atendimentos por paciente",
+    "descricao": "Orientações do módulo hospitalar para pesquisando atendimentos por paciente.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/pesquisando-atendimentos-por-paciente-201907160242"
+  },
+  {
+    "id": 109,
+    "modulo": "Hospitalar",
+    "categoria": "Recepção",
+    "subcategoria": "Impressão",
+    "titulo": "Declaração de comparecimento",
+    "descricao": "Orientações do módulo hospitalar para declaração de comparecimento.",
+    "url": "https://sissonline.tomticket.com/kb/recepcao/declaracao-de-comparecimento-201907160242"
+  },
+  {
+    "id": 110,
+    "modulo": "Hospitalar",
+    "categoria": "Impressão",
+    "subcategoria": "Configuração",
+    "titulo": "Configuração das impressoras de etiqueta",
+    "descricao": "Orientações do módulo hospitalar para configuração das impressoras de etiqueta.",
+    "url": "https://sissonline.tomticket.com/kb/impressao/configuracao-das-impressoras-de-etiqueta"
+  },
+  {
+    "id": 111,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Procedimentos",
+    "titulo": "Cadastrando referência",
+    "descricao": "Orientações administrativas do SISS para cadastrando referência.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/cadastrando-referencia"
+  },
+  {
+    "id": 112,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Cadastro e pesquisa",
+    "titulo": "Pesquisando profissional",
+    "descricao": "Orientações administrativas do SISS para pesquisando profissional.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/pesquisando-profissional"
+  },
+  {
+    "id": 113,
+    "modulo": "Administração do sistema",
+    "categoria": "Usuários",
+    "subcategoria": "Cadastros",
+    "titulo": "Unificando cadastro de pacientes",
+    "descricao": "Orientações administrativas do SISS para unificando cadastro de pacientes.",
+    "url": "https://sissonline.tomticket.com/kb/usuarios/unificando-cadastro-de-pacientes-201907160213"
+  },
+  {
+    "id": 114,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Exames",
+    "titulo": "Cadastrando exames",
+    "descricao": "Orientações administrativas do SISS para cadastrando exames.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/cadastrando-exames"
+  },
+  {
+    "id": 115,
+    "modulo": "Administração do sistema",
+    "categoria": "Usuários",
+    "subcategoria": "Acesso",
+    "titulo": "Cartão de acesso e senha",
+    "descricao": "Orientações administrativas do SISS para cartão de acesso e senha.",
+    "url": "https://sissonline.tomticket.com/kb/usuarios/cartao-de-acesso-e-senha-201907160214"
+  },
+  {
+    "id": 116,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Acesso",
+    "titulo": "Perfil de acesso",
+    "descricao": "Orientações administrativas do SISS para perfil de acesso.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/perfil-de-acesso"
+  },
+  {
+    "id": 117,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Exames",
+    "titulo": "Cadastrando área do Corpo",
+    "descricao": "Orientações administrativas do SISS para cadastrando área do corpo.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/cadastrando-area-do-corpo"
+  },
+  {
+    "id": 118,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Cadastro",
+    "titulo": "Incluindo CNS do profissional",
+    "descricao": "Orientações administrativas do SISS para incluindo cns do profissional.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/incluindo-cns-do-profissional-201907160204"
+  },
+  {
+    "id": 119,
+    "modulo": "Administração do sistema",
+    "categoria": "Usuários",
+    "subcategoria": "Permissões",
+    "titulo": "Permissões para usuários",
+    "descricao": "Orientações administrativas do SISS para permissões para usuários.",
+    "url": "https://sissonline.tomticket.com/kb/usuarios/permissoes-para-usuarios-201907160215"
+  },
+  {
+    "id": 120,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Procedimentos",
+    "titulo": "Consultar / Editar referência",
+    "descricao": "Orientações administrativas do SISS para consultar / editar referência.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/consultar-editar-referencia"
+  },
+  {
+    "id": 121,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Corpo clínico",
+    "titulo": "Inserindo profissional - Corpo clínico",
+    "descricao": "Orientações administrativas do SISS para inserindo profissional - corpo clínico.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/inserindo-profissional-corpo-clinico-201907160206"
+  },
+  {
+    "id": 122,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Exames",
+    "titulo": "Consultar / Editar exames",
+    "descricao": "Orientações administrativas do SISS para consultar / editar exames.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/consultar-editar-exames"
+  },
+  {
+    "id": 123,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Vínculos",
+    "titulo": "Criando vínculos com o estabelecimento",
+    "descricao": "Orientações administrativas do SISS para criando vínculos com o estabelecimento.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/criando-vinculos-com-o-estabelecimento-201907160207"
+  },
+  {
+    "id": 124,
+    "modulo": "Administração do sistema",
+    "categoria": "Regulação",
+    "subcategoria": "Solicitações",
+    "titulo": "Aprovar / Regular uma solicitação",
+    "descricao": "Orientações administrativas do SISS para aprovar / regular uma solicitação.",
+    "url": "https://sissonline.tomticket.com/kb/regulacao/aprovar-regular-uma-solicitacao"
+  },
+  {
+    "id": 125,
+    "modulo": "Administração do sistema",
+    "categoria": "Profissionais",
+    "subcategoria": "Cadastro",
+    "titulo": "Cadastrando novo profissional no estabelecimento",
+    "descricao": "Orientações administrativas do SISS para cadastrando novo profissional no estabelecimento.",
+    "url": "https://sissonline.tomticket.com/kb/criacao-de-acesso-e-vinculo-de-usuario-e-profissional/cadastrando-novo-profissional-ao-estabelecimento"
+  },
+  {
+    "id": 126,
+    "modulo": "Administração do sistema",
+    "categoria": "Usuários",
+    "subcategoria": "Acesso",
+    "titulo": "Realizando login no sistema",
+    "descricao": "Orientações administrativas do SISS para realizando login no sistema.",
+    "url": "https://sissonline.tomticket.com/kb/usuarios/realizando-login-no-sistema"
+  },
+  {
+    "id": 127,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 1 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 1 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/indicador-1-previne-brasil"
+  },
+  {
+    "id": 128,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 2 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 2 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/indicador-2-previne-brasil"
+  },
+  {
+    "id": 129,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 3 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 3 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/nota-tecnica-indicador-3-previne-brasil"
+  },
+  {
+    "id": 130,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 4 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 4 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/nota-tecnica-indicador-4-previne-brasil"
+  },
+  {
+    "id": 131,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Ténica - Indicador 5 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota ténica - indicador 5 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/nota-tenica-indicador-5-previne-brasil"
+  },
+  {
+    "id": 132,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 6 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 6 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/nota-tecnica-indicador-6-previne-brasil"
+  },
+  {
+    "id": 133,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Indicadores",
+    "titulo": "Nota Técnica - Indicador 7 Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a nota técnica - indicador 7 previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/previne-brasil/nota-tecnica-indicador-7-previne-brasil"
+  },
+  {
+    "id": 134,
+    "modulo": "BI",
+    "categoria": "Previne Brasil",
+    "subcategoria": "Visão geral",
+    "titulo": "Previne Brasil",
+    "descricao": "Conteúdo de BI relacionado a previne brasil.",
+    "url": "https://sissonline.tomticket.com/kb/bi/previne-brasil"
+  },
+  {
+    "id": 135,
+    "modulo": "Processo de trabalho",
+    "categoria": "Multiplicador",
+    "subcategoria": "Orientações",
+    "titulo": "Qual é a missão do multiplicador?",
+    "descricao": "Orientações sobre o papel do multiplicador: qual é a missão do multiplicador?.",
+    "url": "https://sissonline.tomticket.com/kb/multiplicador/qual-e-a-missao-do-multiplicador-201907160250"
+  },
+  {
+    "id": 136,
+    "modulo": "Processo de trabalho",
+    "categoria": "Multiplicador",
+    "subcategoria": "Orientações",
+    "titulo": "Meu estabelecimento pode ter mais de um multiplicador?",
+    "descricao": "Orientações sobre o papel do multiplicador: meu estabelecimento pode ter mais de um multiplicador?.",
+    "url": "https://sissonline.tomticket.com/kb/multiplicador/meu-estabelecimento-pode-ter-mais-de-um-multiplicador-201907160250"
+  }
+]
